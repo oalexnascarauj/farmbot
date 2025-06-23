@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlador Hidropônico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hydroponic-card" id="hydroponicCard">
+        <div class="card-content">
+            <div class="card-header">
+                <div class="header-left">
+                    <h2 contenteditable="true" id="moduleTitle"><i class="fas fa-leaf"></i> Módulo AL-203</h2>
+                    <button id="saveTitleBtn" class="save-btn"><i class="fas fa-save"></i></button>
+                    <div class="status-indicator">
+                        <div class="status-icon active">
+                            <div class="pulse-ring"></div>
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>Operacional</span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <div class="dropdown">
+                        <button class="options-btn"><i class="fas fa-ellipsis-v"></i> Opções</button>
+                        <div class="dropdown-content">
+                            <a href="#"><i class="fas fa-broom"></i> Limpeza</a>
+                            <a href="#"><i class="fas fa-sliders-h"></i> Sensores</a>
+                            <a href="#"><i class="fas fa-database"></i> Dados</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sensor-grid">
+                <div class="sensor-item">
+                    <div class="sensor-icon"><i class="fas fa-thermometer-half"></i></div>
+                    <div class="sensor-data">
+                        <span class="value">24.5</span>
+                        <span class="unit">°C</span>
+                    </div>
+                    <div class="sensor-label">Temperatura</div>
+                </div>
+
+                <div class="sensor-item">
+                    <div class="sensor-icon"><i class="fas fa-tint"></i></div>
+                    <div class="sensor-data">
+                        <span class="value">6.2</span>
+                        <span class="unit">pH</span>
+                    </div>
+                    <div class="sensor-label">Nível pH</div>
+                </div>
+
+                <div class="sensor-item">
+                    <div class="sensor-icon"><i class="fas fa-battery-three-quarters"></i></div>
+                    <div class="sensor-data">
+                        <span class="value">2.4</span>
+                        <span class="unit">mS/cm</span>
+                    </div>
+                    <div class="sensor-label">Nutrientes</div>
+                </div>
+
+                <div class="sensor-item">
+                    <div class="sensor-icon"><i class="fas fa-water"></i></div>
+                    <div class="sensor-data">
+                        <span class="value">85</span>
+                        <span class="unit">%</span>
+                    </div>
+                    <div class="sensor-label">Umidade</div>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Fase Vegetativa</span>
+                    <span>35% concluído</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 35%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <button class="control-btn power-btn"><i class="fas fa-power-off"></i> Desligar</button>
+            <button class="control-btn calibrate-btn"><i class="fas fa-cog"></i> Calibrar</button>
+            <button class="control-btn restart-btn"><i class="fas fa-redo"></i> Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
