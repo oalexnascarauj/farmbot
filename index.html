@@ -1,96 +1,357 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controlador Hidropônico</title>
+    <title>FarmBot - Monitoramento Hidropônico</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hydroponic-card" id="hydroponicCard">
-        <div class="card-content">
+    <div class="container">
+        <div class="hydroponic-card">
+            <!-- Cabeçalho do Card -->
             <div class="card-header">
-                <div class="header-left">
-                    <h2 contenteditable="true" id="moduleTitle"><i class="fas fa-leaf"></i> Módulo AL-203</h2>
-                    <button id="saveTitleBtn" class="save-btn"><i class="fas fa-save"></i></button>
-                    <div class="status-indicator">
-                        <div class="status-icon active">
-                            <div class="pulse-ring"></div>
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <span>Operacional</span>
-                    </div>
-                </div>
-                
-                <div class="header-right">
-                    <div class="dropdown">
-                        <button class="options-btn"><i class="fas fa-ellipsis-v"></i> Opções</button>
-                        <div class="dropdown-content">
-                            <a href="#"><i class="fas fa-broom"></i> Limpeza</a>
-                            <a href="#"><i class="fas fa-sliders-h"></i> Sensores</a>
-                            <a href="#"><i class="fas fa-database"></i> Dados</a>
-                        </div>
-                    </div>
+                <h2 id="moduleTitle" class="module-title" contenteditable="true">
+                    <i class="fas fa-seedling"></i> Alface Crespa
+                </h2>
+                <div class="header-controls">
+                    <button id="themeToggleBtn" class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="options-btn">
+                        <i class="fas fa-cog"></i>
+                    </button>
                 </div>
             </div>
 
+            <!-- Status do Sistema -->
+            <div class="status-bar">
+                <div class="status-indicator">
+                    <div class="status-icon">
+                        <div class="pulse-ring"></div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <span>Operacional</span>
+                </div>
+                <button class="power-btn">
+                    <i class="fas fa-pause"></i> Pausar
+                </button>
+            </div>
+
+            <!-- Indicadores de Sensores com tamanho reduzido -->
             <div class="sensor-grid">
                 <div class="sensor-item">
-                    <div class="sensor-icon"><i class="fas fa-thermometer-half"></i></div>
+                    <div class="sensor-icon">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
                     <div class="sensor-data">
-                        <span class="value">24.5</span>
-                        <span class="unit">°C</span>
+                        <div class="value">24.5</div>
+                        <div class="unit">°C</div>
                     </div>
                     <div class="sensor-label">Temperatura</div>
                 </div>
-
+                
                 <div class="sensor-item">
-                    <div class="sensor-icon"><i class="fas fa-tint"></i></div>
-                    <div class="sensor-data">
-                        <span class="value">6.2</span>
-                        <span class="unit">pH</span>
+                    <div class="sensor-icon">
+                        <i class="fas fa-tint"></i>
                     </div>
-                    <div class="sensor-label">Nível pH</div>
-                </div>
-
-                <div class="sensor-item">
-                    <div class="sensor-icon"><i class="fas fa-battery-three-quarters"></i></div>
                     <div class="sensor-data">
-                        <span class="value">2.4</span>
-                        <span class="unit">mS/cm</span>
+                        <div class="value">6.2</div>
+                        <div class="unit">pH</div>
+                    </div>
+                    <div class="sensor-label">pH</div>
+                </div>
+                
+                <div class="sensor-item">
+                    <div class="sensor-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="sensor-data">
+                        <div class="value">2.4</div>
+                        <div class="unit">mS/cm</div>
                     </div>
                     <div class="sensor-label">Nutrientes</div>
                 </div>
-
+                
                 <div class="sensor-item">
-                    <div class="sensor-icon"><i class="fas fa-water"></i></div>
+                    <div class="sensor-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
                     <div class="sensor-data">
-                        <span class="value">85</span>
-                        <span class="unit">%</span>
+                        <div class="value">92.0</div>
+                        <div class="unit">%</div>
                     </div>
                     <div class="sensor-label">Umidade</div>
                 </div>
             </div>
 
-            <div class="progress-container">
-                <div class="progress-info">
-                    <span>Fase Vegetativa</span>
-                    <span>35% concluído</span>
+            <!-- Timeline Futurística -->
+            <div class="section-title">Ciclo de Vida</div>
+            <div class="futuristic-timeline">
+                <div class="timeline-track">
+                    <!-- Linha de conexão com barra de progresso -->
+                    <div class="timeline-connection"></div>
+                    <div class="timeline-progress"></div>
+                    
+                    <!-- Nós da timeline -->
+                    <div class="timeline-nodes">
+                        <div class="timeline-node" data-position="0" data-phase="plantio">
+                            <div class="node-icon">
+                                <i class="fas fa-seedling"></i>
+                                <div class="node-pulse"></div>
+                            </div>
+                            <div class="node-label">Plantio</div>
+                        </div>
+                        
+                        <div class="timeline-node" data-position="33" data-phase="crescimento">
+                            <div class="node-icon">
+                                <i class="fas fa-leaf"></i>
+                                <div class="node-pulse"></div>
+                            </div>
+                            <div class="node-label">Crescimento</div>
+                        </div>
+                        
+                        <div class="timeline-node" data-position="66" data-phase="floracao">
+                            <div class="node-icon">
+                                <i class="fas fa-spa"></i>
+                                <div class="node-pulse"></div>
+                            </div>
+                            <div class="node-label">Floração</div>
+                        </div>
+                        
+                        <div class="timeline-node" data-position="100" data-phase="colheita">
+                            <div class="node-icon">
+                                <i class="fas fa-apple-alt"></i>
+                                <div class="node-pulse"></div>
+                            </div>
+                            <div class="node-label">Colheita</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="progress-bar">
-                    <div class="progress-fill" style="width: 35%"></div>
+                
+                <!-- Detalhes da fase selecionada -->
+                <div class="timeline-details">
+                    <div class="timeline-details-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="details-content">
+                        <div class="details-title">Fase Atual: Plantio</div>
+                        <div class="details-description">Germinação das sementes e início do desenvolvimento</div>
+                        <div class="details-progress">35% concluído</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão de atualização -->
+            <div class="action-footer">
+                <button class="update-btn">
+                    <i class="fas fa-sync-alt"></i> Atualizar Sensores
+                </button>
+                <div class="timestamp">
+                    Última atualização: <span id="lastUpdate">27/08/2025 15:42</span>
                 </div>
             </div>
         </div>
-
-        <div class="card-footer">
-            <button class="control-btn power-btn"><i class="fas fa-power-off"></i> Desligar</button>
-            <button class="control-btn calibrate-btn"><i class="fas fa-cog"></i> Calibrar</button>
-            <button class="control-btn restart-btn"><i class="fas fa-redo"></i> Reiniciar</button>
+    </div>
+    
+    <!-- Contador de Pausa como Overlay com botões Ligar e Desligar -->
+    <div id="pauseCountdown" class="pause-countdown-overlay">
+        <div class="pause-countdown-container">
+            <div class="countdown-title">Sistema em Pausa</div>
+            <div class="countdown-time">
+                <span class="countdown-minutes">15</span>:<span class="countdown-seconds">00</span>
+            </div>
+            <div class="countdown-description">Retomada automática em</div>
+            <div class="countdown-buttons">
+                <button class="countdown-resume-btn">
+                    <i class="fas fa-play"></i> Ligar
+                </button>
+                <button class="countdown-stop-btn">
+                    <i class="fas fa-power-off"></i> Desligar
+                </button>
+            </div>
         </div>
     </div>
-
+    
+    <!-- Modal de Confirmação para Encerrar Ciclo -->
+    <div id="endCycleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Encerrar Ciclo</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Deseja realmente encerrar o ciclo de plantio e enviar os dados para a série histórica?</p>
+                <p>Esta ação não poderá ser desfeita.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="cancelEndCycle" class="modal-btn cancel-btn">Cancelar</button>
+                <button id="confirmEndCycle" class="modal-btn confirm-btn">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de Configurações com 4 Abas -->
+    <div id="settingsModal" class="modal settings-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Configurações</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <!-- Navegação por abas -->
+                <div class="settings-tabs">
+                    <button class="tab-btn active" data-tab="deviceTab">Dispositivo</button>
+                    <button class="tab-btn" data-tab="cleaningTab">Limpeza</button>
+                    <button class="tab-btn" data-tab="sensorsTab">Sensores</button>
+                    <button class="tab-btn" data-tab="dataTab">Dados e Integrações</button>
+                </div>
+                
+                <!-- Conteúdo das abas -->
+                <div id="deviceTab" class="tab-pane active">
+                    <div class="form-group">
+                        <label>Nome do Dispositivo</label>
+                        <input type="text" value="FarmBot #342" placeholder="Nome do Dispositivo">
+                    </div>
+                    <div class="form-group">
+                        <label>Modelo</label>
+                        <input type="text" value="Hidropônico v2.5" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label>Firmware</label>
+                        <input type="text" value="v1.8.3" disabled>
+                        <button class="settings-btn">Verificar Atualizações</button>
+                    </div>
+                    <div class="form-group">
+                        <label>Modo de Operação</label>
+                        <select>
+                            <option value="auto">Automático</option>
+                            <option value="manual">Manual</option>
+                            <option value="scheduled">Agendado</option>
+                        </select>
+                    </div>
+                    <button class="settings-btn danger">Reiniciar Dispositivo</button>
+                </div>
+                
+                <div id="cleaningTab" class="tab-pane">
+                    <div class="form-group">
+                        <label>Última Limpeza</label>
+                        <input type="date" value="2025-08-15" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label>Próxima Limpeza Programada</label>
+                        <input type="date" value="2025-09-15">
+                    </div>
+                    <div class="form-group">
+                        <label>Ciclo de Limpeza</label>
+                        <select>
+                            <option value="15">15 dias</option>
+                            <option value="30" selected>30 dias</option>
+                            <option value="45">45 dias</option>
+                            <option value="60">60 dias</option>
+                        </select>
+                    </div>
+                    <button class="settings-btn">Iniciar Limpeza Agora</button>
+                    <button class="settings-btn">Ver Histórico de Limpezas</button>
+                </div>
+                
+                <div id="sensorsTab" class="tab-pane">
+                    <div class="form-group">
+                        <label>Intervalo de Atualização</label>
+                        <select>
+                            <option value="60">1 minuto</option>
+                            <option value="300" selected>5 minutos</option>
+                            <option value="900">15 minutos</option>
+                            <option value="1800">30 minutos</option>
+                        </select>
+                    </div>
+                    
+                    <div class="sensor-calibration">
+                        <h5>Temperatura</h5>
+                        <div class="form-group">
+                            <label>Alarme Min</label>
+                            <input type="number" value="18" min="0" max="40" step="0.5">
+                        </div>
+                        <div class="form-group">
+                            <label>Alarme Max</label>
+                            <input type="number" value="30" min="0" max="40" step="0.5">
+                        </div>
+                        <button class="settings-btn">Calibrar Sensor</button>
+                    </div>
+                    
+                    <div class="sensor-calibration">
+                        <h5>pH</h5>
+                        <div class="form-group">
+                            <label>Alarme Min</label>
+                            <input type="number" value="5.5" min="0" max="14" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label>Alarme Max</label>
+                            <input type="number" value="6.8" min="0" max="14" step="0.1">
+                        </div>
+                        <button class="settings-btn">Calibrar Sensor</button>
+                    </div>
+                </div>
+                
+                <div id="dataTab" class="tab-pane">
+                    <div class="form-group">
+                        <label>Exportar Dados</label>
+                        <select>
+                            <option value="csv">CSV</option>
+                            <option value="json">JSON</option>
+                            <option value="excel">Excel</option>
+                        </select>
+                        <button class="settings-btn">Exportar</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Período de Retenção</label>
+                        <select>
+                            <option value="30">30 dias</option>
+                            <option value="90" selected>90 dias</option>
+                            <option value="180">180 dias</option>
+                            <option value="365">365 dias</option>
+                        </select>
+                    </div>
+                    
+                    <h5>Integrações</h5>
+                    
+                    <div class="integration-item">
+                        <div class="integration-info">
+                            <div>FarmCloud</div>
+                            <span class="status connected">Conectado</span>
+                        </div>
+                        <button class="settings-btn">Configurar</button>
+                    </div>
+                    
+                    <div class="integration-item">
+                        <div class="integration-info">
+                            <div>WeatherAPI</div>
+                            <span class="status disconnected">Desconectado</span>
+                        </div>
+                        <button class="settings-btn">Conectar</button>
+                    </div>
+                    
+                    <div class="integration-item">
+                        <div class="integration-info">
+                            <div>IoT Hub</div>
+                            <span class="status connected">Conectado</span>
+                        </div>
+                        <button class="settings-btn">Configurar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cancelSettings" class="modal-btn cancel-btn">Cancelar</button>
+                <button id="saveSettings" class="modal-btn confirm-btn">Salvar</button>
+            </div>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
