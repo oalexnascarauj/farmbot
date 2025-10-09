@@ -607,370 +607,6 @@ h3 {
     50% { transform: translateY(-20px) rotate(180deg); }
 }
 
-/* Pricing Plans Section */
-.pricing-plans {
-    padding: 80px 0;
-    background: var(--bg-primary);
-}
-
-.section-subtitle {
-    text-align: center;
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    margin-bottom: 3rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.pricing-card {
-    background: var(--bg-elevated);
-    border: 2px solid var(--border-color);
-    border-radius: 20px;
-    padding: 2.5rem 2rem;
-    text-align: center;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.pricing-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px var(--shadow);
-    border-color: var(--color-accent);
-}
-
-.pricing-card.individual {
-    border-color: var(--color-accent);
-    position: relative;
-}
-
-.plan-badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--color-accent);
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.pricing-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-}
-
-.pricing-card p {
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
-}
-
-.pricing-main {
-    margin: 2rem 0;
-    padding: 1.5rem 0;
-    border-top: 1px solid var(--border-subtle);
-    border-bottom: 1px solid var(--border-subtle);
-}
-
-.price-device {
-    margin-bottom: 1rem;
-}
-
-.currency {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    vertical-align: top;
-}
-
-.amount {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--color-accent);
-}
-
-.period {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    margin-left: 0.5rem;
-}
-
-.price-subscription {
-    font-size: 1.1rem;
-    color: var(--text-primary);
-    font-weight: 500;
-}
-
-.monthly-price {
-    color: var(--color-accent);
-    font-weight: 600;
-}
-
-.custom-pricing {
-    padding: 1rem 0;
-}
-
-.custom-text {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--color-accent);
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.custom-sub {
-    font-size: 1rem;
-    color: var(--text-secondary);
-}
-
-.plan-features {
-    text-align: left;
-    margin: 2rem 0;
-}
-
-.plan-features .feature-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-    padding: 0;
-    background: none;
-    border-radius: 0;
-}
-
-.check-icon {
-    width: 20px;
-    height: 20px;
-    background: var(--color-accent);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8rem;
-    font-weight: bold;
-    flex-shrink: 0;
-}
-
-.plan-cta {
-    width: 100%;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-/* AI Farming Section */
-.ai-farming {
-    padding: 80px 0;
-    background: var(--gradient-section);
-    position: relative;
-    overflow: hidden;
-}
-
-.ai-farming::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><circle cx="30" cy="30" r="2" fill="rgba(34,197,94,0.1)"/><circle cx="15" cy="15" r="1" fill="rgba(34,197,94,0.08)"/><circle cx="45" cy="45" r="1.5" fill="rgba(34,197,94,0.06)"/></svg>') repeat;
-    opacity: 0.4;
-}
-
-.ai-header-content {
-    text-align: center;
-    margin-bottom: 3rem;
-    position: relative;
-    z-index: 1;
-}
-
-.ai-header-content .section-title.centered {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.ai-header-content .ai-subtitle.left-aligned {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-.ai-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.ai-text {
-    max-width: 600px;
-}
-
-.ai-subtitle {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
-}
-
-.ai-capabilities {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.capability-item {
-    display: flex;
-    gap: 1rem;
-    padding: 1.5rem;
-    background: var(--bg-elevated);
-    border-radius: 16px;
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-}
-
-.capability-item:hover {
-    border-color: var(--color-accent);
-    transform: translateX(10px);
-    box-shadow: 0 8px 25px var(--shadow);
-}
-
-.capability-icon {
-    font-size: 2rem;
-    width: 60px;
-    height: 60px;
-    background: var(--bg-accent-soft);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.capability-content h4 {
-    font-size: 1.1rem;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-}
-
-.capability-content p {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    line-height: 1.5;
-}
-
-.ai-dashboard-preview {
-    background: var(--bg-elevated);
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: 0 20px 40px var(--shadow);
-    border: 1px solid var(--border-color);
-}
-
-.ai-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border-subtle);
-}
-
-.ai-status {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.ai-indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--color-accent);
-    animation: pulse 2s infinite;
-}
-
-.ai-decisions {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-.ai-actions {
-    margin-bottom: 1.5rem;
-}
-
-.ai-action {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    background: var(--bg-inset);
-    border-radius: 12px;
-    border-left: 3px solid var(--color-accent);
-}
-
-.action-time {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    font-weight: 600;
-    min-width: 40px;
-}
-
-.action-text {
-    flex: 1;
-    font-size: 0.9rem;
-    color: var(--text-primary);
-}
-
-.action-status {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: var(--color-accent);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8rem;
-}
-
-.ai-insights h4 {
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.insight-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-    font-size: 0.9rem;
-    color: var(--text-primary);
-}
-
-.insight-icon {
-    font-size: 1.1rem;
-}
-
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
@@ -1030,58 +666,6 @@ h3 {
 
 .feature-item .icon {
     font-size: 1.2rem;
-}
-
-.hero-pricing-preview {
-    display: flex;
-    gap: 1rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-}
-
-.pricing-card-mini {
-    flex: 1;
-    min-width: 200px;
-    background: var(--bg-elevated);
-    border: 2px solid var(--border-color);
-    border-radius: 16px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.pricing-card-mini:hover {
-    border-color: var(--color-accent);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px var(--shadow);
-}
-
-.pricing-card-mini h3 {
-    font-size: 1.1rem;
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-}
-
-.price {
-    margin-bottom: 0.5rem;
-}
-
-.price-main {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--color-accent);
-    display: block;
-}
-
-.price-sub {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-.price-monthly {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
 }
 
 .hero-cta {
@@ -1222,250 +806,58 @@ h3 {
     line-height: 1.6;
 }
 
-/* How It Works Section - AI Flow Design */
+/* How It Works Section */
 .how-it-works {
     padding: 80px 0;
     background: linear-gradient(135deg, rgba(34, 197, 94, 0.02), rgba(22, 163, 74, 0.01));
-    text-align: center;
 }
 
-.how-it-works .section-subtitle {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    margin-bottom: 3rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.how-flow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
 }
 
-.flow-step {
+.step {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 200px;
-    position: relative;
-}
-
-.step-visual {
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-.step-icon.large {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    display: block;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 .step-number {
-    width: 30px;
-    height: 30px;
-    background: var(--color-accent);
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-alt));
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
-    font-size: 0.9rem;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+    font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
 .step-content h3 {
     margin-bottom: 0.5rem;
-    color: var(--text-primary);
-    font-size: 1.1rem;
+    color: #333;
 }
 
 .step-content p {
-    color: var(--text-secondary);
-    line-height: 1.5;
-    font-size: 0.9rem;
-}
-
-.step-arrow {
-    font-size: 1.5rem;
-    color: var(--color-accent);
-    margin: 0 1rem;
-    opacity: 0.6;
-}
-
-.how-stats {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 3rem;
-}
-
-.stat-item {
-    text-align: center;
-}
-
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--color-accent);
-    display: block;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    margin-top: 0.5rem;
-}
-
-/* I Am Section */
-.i-am-section {
-    padding: 80px 0;
-    background: var(--bg-primary);
-    text-align: center;
-}
-
-.i-am-section .section-subtitle {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    margin-bottom: 3rem;
-}
-
-.iam-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-    max-width: 900px;
-    margin: 0 auto 3rem;
-}
-
-.iam-card {
-    background: var(--bg-card);
-    border-radius: 16px;
-    padding: 2rem;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.iam-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-alt));
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.iam-card:hover::before,
-.iam-card.selected::before {
-    transform: scaleX(1);
-}
-
-.iam-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(34, 197, 94, 0.15);
-    border-color: var(--color-accent);
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-}
-
-.profile-icon {
-    font-size: 2.5rem;
-    margin-right: 1rem;
-}
-
-.card-header h3 {
-    color: var(--text-primary);
-    font-size: 1.3rem;
-    flex: 1;
-    text-align: left;
-}
-
-.card-selector {
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--color-accent);
-    border-radius: 50%;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.iam-card.selected .card-selector {
-    background: var(--color-accent);
-}
-
-.iam-card.selected .card-selector::after {
-    content: '✓';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.card-body {
-    text-align: left;
-}
-
-.card-body p {
-    color: var(--text-secondary);
+    color: #666;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
 }
 
-.profile-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+/* Target Audience Section */
+.target-audience {
+    padding: 80px 0;
+    background: white;
 }
 
-.feature-tag {
-    background: rgba(34, 197, 94, 0.1);
-    color: var(--color-accent);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-}
-
-.recommended-plan {
-    padding: 1rem;
-    background: rgba(34, 197, 94, 0.05);
-    border-radius: 8px;
-    border-left: 4px solid var(--color-accent);
-}
-
-.recommended-plan span {
-    color: var(--color-accent);
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.iam-cta {
-    margin-top: 2rem;
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
 .audience-card {
@@ -1788,49 +1180,6 @@ h3 {
     
     .steps {
         grid-template-columns: 1fr;
-    }
-    
-    /* How It Works Mobile */
-    .how-flow {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    .step-arrow {
-        transform: rotate(90deg);
-        margin: 1rem 0;
-    }
-    
-    .how-stats {
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: center;
-    }
-    
-    /* I Am Cards Mobile */
-    .iam-cards {
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        gap: 1.5rem;
-    }
-    
-    .iam-card {
-        padding: 1.5rem;
-    }
-    
-    .profile-features {
-        justify-content: center;
-    }
-    
-    /* AI Section Mobile */
-    .ai-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .ai-header-content .ai-subtitle.left-aligned {
-        text-align: center;
-        font-size: 1rem;
     }
     
     .tech-features {
