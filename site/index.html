@@ -6,49 +6,22 @@
     <title>FarmBot - Tradição e tecnologia alimentando o futuro</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="index-page">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <h2 data-key="brand_title">🌱 FarmBot</h2>
+                <h2>🌱 FarmBot</h2>
             </div>
-            <div class="nav-controls">
-                <div class="language-selector">
-                    <button class="language-btn" id="languageBtn">
-                        <span class="flag-icon">🇧🇷</span>
-                        <span class="language-text" data-key="language">PT</span>
-                        <span class="dropdown-arrow">▼</span>
-                    </button>
-                    <div class="language-dropdown" id="languageDropdown">
-                        <div class="language-option" data-lang="pt" data-flag="🇧🇷">
-                            <span class="flag">🇧🇷</span> <span data-key="lang_portuguese">Português (Brasil)</span>
-                        </div>
-                        <div class="language-option" data-lang="ar" data-flag="🇯🇴">
-                            <span class="flag">🇯🇴</span> <span data-key="lang_arabic">العربية (الأردن)</span>
-                        </div>
-                        <div class="language-option" data-lang="en" data-flag="🇺🇸">
-                            <span class="flag">🇺🇸</span> <span data-key="lang_english">English (US)</span>
-                        </div>
-                        <div class="language-option" data-lang="es" data-flag="🇪🇸">
-                            <span class="flag">🇪🇸</span> <span data-key="lang_spanish">Español</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="theme-toggle">
-                    <button class="theme-btn" id="themeToggle">
-                        <span class="theme-icon">🌙</span>
-                    </button>
-                </div>
-                <div class="nav-links">
-                    <a href="#recursos" data-key="nav_features">Recursos</a>
-                    <a href="#como-funciona" data-key="nav_how_it_works">Como Funciona</a>
-                    <a href="#publico" data-key="nav_target">Para Quem</a>
-                    <a href="#agro-brasileiro" data-key="nav_agro">Agronegócio</a>
-                    <a href="#contato" data-key="nav_contact">Contato</a>
-                    <button class="btn-primary" data-key="nav_start">Começar Agora</button>
-                </div>
+            <div class="nav-links">
+                <a href="ia-agricultora.html">A IA Agricultora</a>
+                <a href="dispositivos-iot.html">Dispositivos IoT</a>
+                <a href="cases-sucesso.html">Cases de Sucesso</a>
+                <a href="planos.html">Planos</a>
+                <a href="#contato">Contato</a>
+                <button class="btn-primary">Converse com Iara</button>
             </div>
             <div class="mobile-menu-toggle">
                 <span></span>
@@ -58,53 +31,73 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Section with Parallax -->
+    <section class="hero parallax-container">
+        <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1920&h=1080&fit=crop&q=80');"></div>
+        <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 data-key="hero_title">Tradição e tecnologia alimentando <span class="highlight">o futuro.</span></h1>
-                    <p class="hero-subtitle" data-key="hero_subtitle">Monitore e controle seu cultivo hidropônico de qualquer lugar do mundo com nossa plataforma completa de IoT.</p>
+                    <h1>Conheça a <span class="iara-name">Iara</span>, a IA</h1>
+                    <div class="ai-role-line">
+                        <span id="typing-text">Hidroponista</span>
+                    </div>
+                    <p class="hero-subtitle">O <strong>FarmBot</strong> é uma plataforma de automação agrícola inteligente que revoluciona a produção através da <span class="iara-name">Iara</span>, nossa IA especializada que monitora e cuida de cultivos tradicionais, cultivos com Hidroponia ou produções com Aquaponia.</p>
                     <div class="hero-features">
                         <div class="feature-item">
-                            <span class="icon">📊</span>
-                            <span data-key="hero_monitoring">Monitoramento 24/7</span>
+                            <span class="icon">📡</span>
+                            <span>Monitoramento 24/7</span>
                         </div>
                         <div class="feature-item">
-                            <span class="icon">🤖</span>
-                            <span data-key="hero_automation">Automação Inteligente</span>
+                            <span class="icon">🎯</span>
+                            <span>Decisões Inteligentes</span>
                         </div>
                         <div class="feature-item">
-                            <span class="icon">📱</span>
-                            <span data-key="hero_remote">Controle Remoto</span>
+                            <span class="icon">📈</span>
+                            <span>Aumento de Produtividade</span>
                         </div>
                     </div>
                     <div class="hero-cta">
-                        <button class="btn-primary large" data-key="hero_try_free">Experimente Grátis</button>
-                        <button class="btn-secondary large" data-key="hero_demo">Ver Demonstração</button>
+                        <button class="btn-primary large">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="dashboard-preview">
-                        <div class="dashboard-header">
-                            <div class="status-indicator online"></div>
-                            <span data-key="dashboard_status_online">Sistema Online</span>
+                    <div class="ai-chat-simulation">
+                        <div class="chat-header">
+                            <div class="ai-indicator">
+                                <div class="ai-dot"></div>
+                                <span>Iara IA - Online</span>
+                            </div>
                         </div>
-                        <div class="sensor-cards">
-                            <div class="sensor-card">
-                                <div class="sensor-title" data-key="sensor_ph">pH</div>
-                                <div class="sensor-value">6.2</div>
-                                <div class="sensor-status ok" data-key="status_normal">Normal</div>
+                        <div class="cultivation-info">
+                            <div class="info-item">
+                                <span class="info-label">Cultivo:</span>
+                                <span class="info-value" id="current-crop">Alface Hidropônica</span>
                             </div>
-                            <div class="sensor-card">
-                                <div class="sensor-title" data-key="sensor_temperature">Temperatura</div>
-                                <div class="sensor-value">24°C</div>
-                                <div class="sensor-status ok" data-key="status_normal">Normal</div>
+                            <div class="sensor-indicators">
+                                <div class="sensor-indicator">
+                                    <span class="sensor-dot ok"></span>
+                                    <span>pH: 6.2</span>
+                                </div>
+                                <div class="sensor-indicator">
+                                    <span class="sensor-dot warning"></span>
+                                    <span>Nutrientes: 45%</span>
+                                </div>
+                                <div class="sensor-indicator">
+                                    <span class="sensor-dot ok"></span>
+                                    <span>Temp: 24°C</span>
+                                </div>
                             </div>
-                            <div class="sensor-card">
-                                <div class="sensor-title" data-key="sensor_nutrients">Nutrientes</div>
-                                <div class="sensor-value">85%</div>
-                                <div class="sensor-status warning" data-key="status_low">Baixo</div>
+                        </div>
+                        <div class="chat-messages">
+                            <!-- Messages will be added dynamically -->
+                        </div>
+                        <div class="chat-input-area">
+                            <div class="chat-input-container">
+                                <input type="text" class="chat-input" placeholder="Digite sua mensagem..." disabled>
+                                <button class="send-button" disabled>
+                                    <span>➤</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -113,207 +106,190 @@
         </div>
     </section>
 
-    <!-- Brazilian Agro Section -->
-    <section id="agro-brasileiro" class="brazilian-agro">
+    <!-- How AI Works Section -->
+    <section class="ai-workflow">
         <div class="container">
-            <div class="agro-content">
-                <div class="agro-text">
-                    <h2 class="section-title" data-key="agro_title">O Futuro do Agronegócio Brasileiro</h2>
-                    <p data-key="agro_description">O Brasil é líder mundial em produção agrícola, e a tecnologia está revolucionando este setor. O FarmBot representa a próxima fronteira da agricultura digital.</p>
-                    <div class="agro-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">27%</div>
-                            <div class="stat-label" data-key="agro_stat1">do PIB brasileiro</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">R$ 2,5 tri</div>
-                            <div class="stat-label" data-key="agro_stat2">faturamento anual</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">19 milhões</div>
-                            <div class="stat-label" data-key="agro_stat3">empregos gerados</div>
-                        </div>
+            <h2 class="section-title">Como sua IA Funciona</h2>
+            <p class="section-subtitle">Sua assistente pessoal que nunca dorme, tomando decisões inteligentes 24 horas por dia</p>
+            <div class="ai-workflow-grid">
+                <div class="workflow-step">
+                    <div class="step-icon">
+                        <div class="ai-avatar">🔍</div>
                     </div>
-                    <div class="agro-highlights">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🚀</span>
-                            <span data-key="agro_highlight1">Crescimento de 40% na agricultura digital</span>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">💧</span>
-                            <span data-key="agro_highlight2">Economia de até 60% no uso da água</span>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">📈</span>
-                            <span data-key="agro_highlight3">Aumento de 30% na produtividade</span>
-                        </div>
-                    </div>
+                    <h3>1. Analisa</h3>
+                    <p>A IA coleta dados de todos os sensores: pH, temperatura, umidade, nutrientes, luz e muito mais. Processa milhares de informações por segundo.</p>
                 </div>
-                <div class="agro-visual">
-                    <div class="geometric-pattern">
-                        <div class="pattern-element pattern-1"></div>
-                        <div class="pattern-element pattern-2"></div>
-                        <div class="pattern-element pattern-3"></div>
-                        <div class="pattern-element pattern-4"></div>
-                        <div class="agro-icon">🌾</div>
+                <div class="workflow-step">
+                    <div class="step-icon">
+                        <div class="ai-avatar">🧠</div>
                     </div>
+                    <h3>2. Decide</h3>
+                    <p>Com base em machine learning e dados históricos, a IA toma decisões inteligentes sobre irrigação, nutrição, iluminação e controle climático.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-icon">
+                        <div class="ai-avatar">⚡</div>
+                    </div>
+                    <h3>3. Controla</h3>
+                    <p>Executa comandos automáticos nos dispositivos IoT: ativa bombas, ajusta iluminação, controla ventilação e monitora sistemas.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-icon">
+                        <div class="ai-avatar">🌱</div>
+                    </div>
+                    <h3>4. Cultiva</h3>
+                    <p>Suas plantas crescem otimizadas pela IA. Ela aprende com cada ciclo, melhorando continuamente os resultados de produção.</p>
+                </div>
+            </div>
+            <div class="ai-benefits">
+                <div class="ai-benefit-item">
+                    <span class="benefit-icon">🎯</span>
+                    <span>Previne problemas antes que aconteçam</span>
+                </div>
+                <div class="ai-benefit-item">
+                    <span class="benefit-icon">📊</span>
+                    <span>Aprende suas preferências e clima local</span>
+                </div>
+                <div class="ai-benefit-item">
+                    <span class="benefit-icon">🔄</span>
+                    <span>Melhora a cada safra automaticamente</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
+    <!-- IoT Devices Section -->
+    <section class="devices-showcase parallax-container">
+        <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1920&h=1080&fit=crop&q=80');"></div>
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h2 class="section-title" data-key="benefits_title">Por que escolher o FarmBot?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">🌡️</div>
-                    <h3 data-key="benefit_monitoring_title">Monitoramento Completo</h3>
-                    <p data-key="benefit_monitoring_desc">Acompanhe pH, temperatura, condutividade elétrica, umidade e níveis de água e nutrientes em tempo real.</p>
+            <h2 class="section-title">Seus 3 Dispositivos IoT Controlados pela IA</h2>
+            <p class="section-subtitle">Cada dispositivo é uma extensão da sua IA Agricultora, trabalhando em harmonia para cultivar da melhor forma</p>
+            <div class="devices-grid">
+                <div class="device-card hydrobot">
+                    <div class="device-icon">🌱</div>
+                    <h3>HydroBot</h3>
+                    <div class="device-badge">Hidroponia</div>
+                    <p>O laboratório da sua IA. Cultivo sem solo com controle preciso de pH, nutrientes e condutividade elétrica.</p>
+                    <div class="device-features">
+                        <div class="feature-item">✓ IA controla pH automaticamente</div>
+                        <div class="feature-item">✓ Nutrição inteligente</div>
+                        <div class="feature-item">✓ Zero desperdício de água</div>
+                    </div>
+                    <div class="device-price">A partir de R$ 2.499</div>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🚨</div>
-                    <h3 data-key="benefit_alerts_title">Alertas Proativos</h3>
-                    <p data-key="benefit_alerts_desc">Receba notificações imediatas quando parâmetros saem do ideal, evitando perdas na produção.</p>
+                
+                <div class="device-card geobot">
+                    <div class="device-icon">🌍</div>
+                    <h3>GeoBot</h3>
+                    <div class="device-badge">Solo Tradicional</div>
+                    <p>Os sentidos da sua IA no campo. Monitoramento completo do solo, clima e irrigação inteligente.</p>
+                    <div class="device-features">
+                        <div class="feature-item">✓ IA analisa umidade do solo</div>
+                        <div class="feature-item">✓ Previsão de pragas</div>
+                        <div class="feature-item">✓ Irrigação otimizada</div>
+                    </div>
+                    <div class="device-price">A partir de R$ 3.499</div>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">📈</div>
-                    <h3 data-key="benefit_history_title">Histórico Detalhado</h3>
-                    <p data-key="benefit_history_desc">Analise tendências e padrões com gráficos interativos para otimizar seus cultivos.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
-                    <h3 data-key="benefit_automation_title">Automação Inteligente</h3>
-                    <p data-key="benefit_automation_desc">Sistema automatizado de irrigação, nutrição e controle baseado em perfis de cultivo.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🔐</div>
-                    <h3 data-key="benefit_security_title">Seguro e Confiável</h3>
-                    <p data-key="benefit_security_desc">Comunicação criptografada e sistema robusto com backup automático dos seus dados.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🌐</div>
-                    <h3 data-key="benefit_remote_title">Acesso Remoto</h3>
-                    <p data-key="benefit_remote_desc">Controle total via web de qualquer lugar do mundo, através de qualquer dispositivo.</p>
+                
+                <div class="device-card aquabot">
+                    <div class="device-icon">🐟</div>
+                    <h3>AquaBot</h3>
+                    <div class="device-badge">Aquaponia</div>
+                    <p>O ecossistema completo da sua IA. Peixes e plantas trabalhando juntos em perfeita harmonia sustentável.</p>
+                    <div class="device-features">
+                        <div class="feature-item">✓ IA gerencia peixes + plantas</div>
+                        <div class="feature-item">✓ Alimentação automática</div>
+                        <div class="feature-item">✓ Proteína + vegetais</div>
+                    </div>
+                    <div class="device-price">A partir de R$ 4.999</div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="como-funciona" class="how-it-works">
-        <div class="container">
-            <h2 class="section-title" data-key="how_title">Como Funciona</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3 data-key="how_step1_title">Conecte seu Dispositivo</h3>
-                        <p data-key="how_step1_desc">Escaneie o QR Code e vincule seu FarmBot à plataforma de forma simples e rápida.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3 data-key="how_step2_title">Configure seu Cultivo</h3>
-                        <p data-key="how_step2_desc">Escolha entre perfis pré-definidos ou crie configurações personalizadas para suas plantas.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3 data-key="how_step3_title">Monitore em Tempo Real</h3>
-                        <p data-key="how_step3_desc">Acompanhe todos os parâmetros vitais através do dashboard intuitivo e receba alertas automáticos.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3 data-key="how_step4_title">Controle Remotamente</h3>
-                        <p data-key="how_step4_desc">Execute comandos, ajuste configurações e automatize processos de qualquer lugar.</p>
-                    </div>
-                </div>
+            <div class="devices-cta">
+                <button class="btn-primary large">Escolher Dispositivo</button>
+                <button class="btn-outline large">Comparar Todos</button>
             </div>
         </div>
     </section>
 
     <!-- Target Audience Section -->
-    <section id="publico" class="target-audience">
+    <section class="target-audience">
         <div class="container">
-            <h2 class="section-title" data-key="audience_title">Ideal Para</h2>
+            <h2 class="section-title">Ideal Para</h2>
             <div class="audience-grid">
                 <div class="audience-card">
                     <div class="audience-icon">🏢</div>
-                    <h3 data-key="audience_urban_title">Agricultores Urbanos</h3>
-                    <p data-key="audience_urban_desc">Pessoas que cultivam em pequenos espaços urbanos e buscam maximizar a produtividade com tecnologia.</p>
+                    <h3>Agricultores Urbanos</h3>
+                    <p>Pessoas que cultivam em pequenos espaços urbanos e buscam maximizar a produtividade com tecnologia.</p>
                 </div>
                 <div class="audience-card">
                     <div class="audience-icon">🔬</div>
-                    <h3 data-key="audience_hydro_title">Entusiastas da Hidroponia</h3>
-                    <p data-key="audience_hydro_desc">Hobbyistas interessados em cultivo sem solo que desejam controle preciso sobre o ambiente.</p>
+                    <h3>Entusiastas da Hidroponia</h3>
+                    <p>Hobbyistas interessados em cultivo sem solo que desejam controle preciso sobre o ambiente.</p>
                 </div>
                 <div class="audience-card">
                     <div class="audience-icon">🚜</div>
-                    <h3 data-key="audience_smallfarm_title">Pequenos Produtores</h3>
-                    <p data-key="audience_smallfarm_desc">Empreendedores rurais que buscam otimização tecnológica para aumentar a eficiência.</p>
+                    <h3>Pequenos Produtores</h3>
+                    <p>Empreendedores rurais que buscam otimização tecnológica para aumentar a eficiência.</p>
                 </div>
                 <div class="audience-card">
                     <div class="audience-icon">🎓</div>
-                    <h3 data-key="audience_educators_title">Educadores</h3>
-                    <p data-key="audience_educators_desc">Escolas e universidades que utilizam a agricultura como ferramenta educacional prática.</p>
+                    <h3>Educadores</h3>
+                    <p>Escolas e universidades que utilizam a agricultura como ferramenta educacional prática.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="recursos" class="features">
+    <!-- Features Section with Agriculture Background -->
+    <section class="features parallax-container">
+        <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&h=1080&fit=crop&q=80');"></div>
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h2 class="section-title" data-key="features_title">Recursos Principais</h2>
+            <h2 class="section-title">Recursos Principais</h2>
             <div class="features-grid">
                 <div class="feature-category">
-                    <h3 data-key="features_monitoring_title">Monitoramento de Sensores</h3>
+                    <h3>Monitoramento de Sensores</h3>
                     <ul>
-                        <li data-key="features_monitoring_item1">Sensor de pH (0-14)</li>
-                        <li data-key="features_monitoring_item2">Temperatura da água e ambiente</li>
-                        <li data-key="features_monitoring_item3">Condutividade elétrica (EC)</li>
-                        <li data-key="features_monitoring_item4">Umidade relativa</li>
-                        <li data-key="features_monitoring_item5">Nível de água e nutrientes</li>
-                        <li data-key="features_monitoring_item6">Leituras a cada 30 segundos</li>
+                        <li>Sensor de pH (0-14)</li>
+                        <li>Temperatura da água e ambiente</li>
+                        <li>Condutividade elétrica (EC)</li>
+                        <li>Umidade relativa</li>
+                        <li>Nível de água e nutrientes</li>
+                        <li>Leituras a cada 30 segundos</li>
                     </ul>
                 </div>
                 <div class="feature-category">
-                    <h3 data-key="features_control_title">Sistema de Controle</h3>
+                    <h3>Sistema de Controle</h3>
                     <ul>
-                        <li data-key="features_control_item1">Bombas de irrigação</li>
-                        <li data-key="features_control_item2">Bombas de nutrientes</li>
-                        <li data-key="features_control_item3">Ventiladores</li>
-                        <li data-key="features_control_item4">Válvulas controladoras</li>
-                        <li data-key="features_control_item5">Comandos em tempo real</li>
-                        <li data-key="features_control_item6">Histórico de operações</li>
+                        <li>Bombas de irrigação</li>
+                        <li>Bombas de nutrientes</li>
+                        <li>Ventiladores</li>
+                        <li>Válvulas controladoras</li>
+                        <li>Comandos em tempo real</li>
+                        <li>Histórico de operações</li>
                     </ul>
                 </div>
                 <div class="feature-category">
-                    <h3 data-key="features_profiles_title">Perfis de Cultivo</h3>
+                    <h3>Perfis de Cultivo</h3>
                     <ul>
-                        <li data-key="features_profiles_item1">Configurações pré-definidas</li>
-                        <li data-key="features_profiles_item2">Parâmetros ideais por planta</li>
-                        <li data-key="features_profiles_item3">Ciclos de crescimento</li>
-                        <li data-key="features_profiles_item4">Personalização avançada</li>
-                        <li data-key="features_profiles_item5">Automação baseada em regras</li>
-                        <li data-key="features_profiles_item6">Otimização contínua</li>
+                        <li>Configurações pré-definidas</li>
+                        <li>Parâmetros ideais por planta</li>
+                        <li>Ciclos de crescimento</li>
+                        <li>Personalização avançada</li>
+                        <li>Automação baseada em regras</li>
+                        <li>Otimização contínua</li>
                     </ul>
                 </div>
                 <div class="feature-category">
-                    <h3 data-key="features_alerts_title">Alertas e Análises</h3>
+                    <h3>Alertas e Análises</h3>
                     <ul>
-                        <li data-key="features_alerts_item1">Notificações em tempo real</li>
-                        <li data-key="features_alerts_item2">Níveis de severidade</li>
-                        <li data-key="features_alerts_item3">Gráficos interativos</li>
-                        <li data-key="features_alerts_item4">Relatórios automáticos</li>
-                        <li data-key="features_alerts_item5">Análise de tendências</li>
-                        <li data-key="features_alerts_item6">Insights preditivos</li>
+                        <li>Notificações em tempo real</li>
+                        <li>Níveis de severidade</li>
+                        <li>Gráficos interativos</li>
+                        <li>Relatórios automáticos</li>
+                        <li>Análise de tendências</li>
+                        <li>Insights preditivos</li>
                     </ul>
                 </div>
             </div>
@@ -323,27 +299,27 @@
     <!-- Technology Section -->
     <section class="technology">
         <div class="container">
-            <h2 class="section-title" data-key="tech_title">Tecnologia de Ponta</h2>
+            <h2 class="section-title">Tecnologia de Ponta</h2>
             <div class="tech-features">
                 <div class="tech-item">
                     <div class="tech-icon">🔗</div>
-                    <h4 data-key="tech_mqtt_title">Comunicação MQTT</h4>
-                    <p data-key="tech_mqtt_desc">Protocolo leve e confiável para IoT com reconexão automática</p>
+                    <h4>Comunicação MQTT</h4>
+                    <p>Protocolo leve e confiável para IoT com reconexão automática</p>
                 </div>
                 <div class="tech-item">
                     <div class="tech-icon">⚡</div>
-                    <h4 data-key="tech_realtime_title">Tempo Real</h4>
-                    <p data-key="tech_realtime_desc">WebSockets para atualizações instantâneas sem refresh</p>
+                    <h4>Tempo Real</h4>
+                    <p>WebSockets para atualizações instantâneas sem refresh</p>
                 </div>
                 <div class="tech-item">
                     <div class="tech-icon">🛡️</div>
-                    <h4 data-key="tech_security_title">Segurança JWT</h4>
-                    <p data-key="tech_security_desc">Autenticação robusta com tokens criptografados</p>
+                    <h4>Segurança JWT</h4>
+                    <p>Autenticação robusta com tokens criptografados</p>
                 </div>
                 <div class="tech-item">
                     <div class="tech-icon">☁️</div>
-                    <h4 data-key="tech_backup_title">Backup Automático</h4>
-                    <p data-key="tech_backup_desc">Seus dados sempre seguros com backups diários</p>
+                    <h4>Backup Automático</h4>
+                    <p>Seus dados sempre seguros com backups diários</p>
                 </div>
             </div>
         </div>
@@ -353,11 +329,11 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2 data-key="cta_title">Transforme sua Agricultura Hoje</h2>
-                <p data-key="cta_desc">Junte-se à revolução da agricultura urbana inteligente. Comece gratuitamente e veja seus cultivos prosperarem com tecnologia de ponta.</p>
+                <h2>Transforme sua Agricultura Hoje</h2>
+                <p>Junte-se à revolução da agricultura urbana inteligente. Comece gratuitamente e veja seus cultivos prosperarem com tecnologia de ponta.</p>
                 <div class="cta-buttons">
-                    <button class="btn-primary large" data-key="cta_primary">Começar Gratuitamente</button>
-                    <button class="btn-outline large" data-key="cta_secondary">Falar com Especialista</button>
+                    <button class="btn-primary large">Começar Gratuitamente</button>
+                    <button class="btn-outline large">Falar com Especialista</button>
                 </div>
             </div>
         </div>
@@ -368,38 +344,39 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3 data-key="footer_brand">🌱 FarmBot</h3>
-                    <p data-key="footer_brand_desc">Plataforma completa para monitoramento e controle de cultivos hidropônicos via IoT.</p>
+                    <h3>🌱 FarmBot</h3>
+                    <p>Sua IA pessoal que cultiva para você. Inteligência artificial que controla dispositivos IoT para hidroponia, agricultura tradicional e aquaponia.</p>
                 </div>
                 <div class="footer-section">
-                    <h4 data-key="footer_product_title">Produto</h4>
+                    <h4>Navegação</h4>
                     <ul>
-                        <li><a href="#recursos" data-key="footer_link_features">Recursos</a></li>
-                        <li><a href="#como-funciona" data-key="footer_link_how">Como Funciona</a></li>
-                        <li><a href="#" data-key="footer_link_pricing">Preços</a></li>
-                        <li><a href="#" data-key="footer_link_docs">Documentação</a></li>
+                        <li><a href="ia-agricultora.html">A IA Agricultora</a></li>
+                        <li><a href="dispositivos-iot.html">Dispositivos IoT</a></li>
+                        <li><a href="cases-sucesso.html">Cases de Sucesso</a></li>
+                        <li><a href="planos.html">Planos</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4 data-key="footer_support_title">Suporte</h4>
+                    <h4>Suporte</h4>
                     <ul>
-                        <li><a href="#" data-key="footer_link_help">Central de Ajuda</a></li>
-                        <li><a href="#" data-key="footer_link_tutorials">Tutoriais</a></li>
-                        <li><a href="#" data-key="footer_link_contact">Contato</a></li>
-                        <li><a href="#" data-key="footer_link_status">Status do Sistema</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Documentação</a></li>
+                        <li><a href="#">Tutoriais</a></li>
+                        <li><a href="#">Status do Sistema</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4 data-key="footer_contact_title">Contato</h4>
+                    <h4>Contato</h4>
                     <ul>
-                        <li data-key="footer_contact_email">📧 contato@farmbot.com.br</li>
-                        <li data-key="footer_contact_phone">📞 +55 11 9999-9999</li>
-                        <li data-key="footer_contact_location">📍 São Paulo, SP</li>
+                        <li>📧 contato@farmbot.com.br</li>
+                        <li>📞 +55 11 9999-9999</li>
+                        <li>📍 São Paulo, SP</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p data-key="footer_rights">&copy; 2025 FarmBot. Todos os direitos reservados.</p>
+                <p>&copy; 2025 FarmBot. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

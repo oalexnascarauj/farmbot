@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos e Preços - FarmBot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">`n    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="index-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2><a href="index.html">🌱 FarmBot</a></h2>
+            </div>
+            <div class="nav-links">
+                <a href="ia-agricultora.html">A IA Agricultora</a>
+                <a href="dispositivos-iot.html">Dispositivos IoT</a>
+                <a href="cases-sucesso.html">Cases de Sucesso</a>
+                <a href="planos.html" class="active">Planos</a>
+                <a href="#contato">Contato</a>
+                <button class="btn-primary">Converse com Iara</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-simple" style="background: linear-gradient(135deg, var(--primaria) 0%, var(--destaque) 100%);">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Escolha Seu Plano com Iara</h1>
+                    <p class="hero-subtitle">Como os pescadores escolhiam presentes para a lendária Iara, escolha o plano ideal para sua <strong>Iara</strong>. Ela está pronta para ser a guardiã do seu cultivo, protegendo cada planta como as águas de um rio sagrado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Toggle -->
+    <section class="pricing-toggle">
+        <div class="container">
+            <div class="toggle-container">
+                <span class="toggle-label">Mensal</span>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="pricing-toggle" checked>
+                    <label for="pricing-toggle"></label>
+                </div>
+                <span class="toggle-label">Anual <span class="discount-badge">-20%</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-plans">
+        <div class="container">
+            <div class="plans-grid">
+                <!-- Starter Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>🌱 Iara Starter</h3>
+                        <p class="plan-subtitle">Para quem quer começar com hidroponia</p>
+                        <div class="plan-price">
+                            <span class="price-current">R$ 97</span>
+                            <span class="price-period">/mês</span>
+                        </div>
+                        <div class="plan-price annual-price" style="display: none;">
+                            <span class="price-current">R$ 929</span>
+                            <span class="price-period">/ano</span>
+                            <span class="price-savings">Economize R$ 235</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-device">
+                        <div class="device-info">
+                            <span class="device-name">HydroBot Básico</span>
+                            <span class="device-price">+ R$ 2.499 (equipamento)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <h4>O que está incluso:</h4>
+                        <ul>
+                            <li>✅ <strong>Iara Básica:</strong> IA monitora pH, EC e temperatura</li>
+                            <li>✅ <strong>Controle Automático:</strong> Irrigação e nutrição automatizadas</li>
+                            <li>✅ <strong>App Mobile:</strong> Monitoramento e alertas no celular</li>
+                            <li>✅ <strong>Suporte por Chat:</strong> Tire dúvidas com nossa equipe</li>
+                            <li>✅ <strong>1 Ciclo de Cultivo:</strong> Até 12 plantas simultâneas</li>
+                            <li>❌ Análise avançada de crescimento</li>
+                            <li>❌ Previsões climáticas integradas</li>
+                            <li>❌ Relatórios detalhados</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-button">
+                        <button class="btn-outline full-width">Começar Agora</button>
+                    </div>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="plan-card popular">
+                    <div class="popular-badge">Mais Popular</div>
+                    <div class="plan-header">
+                        <h3>🚀 Iara Professional</h3>
+                        <p class="plan-subtitle">Para quem quer máxima produtividade</p>
+                        <div class="plan-price">
+                            <span class="price-current">R$ 197</span>
+                            <span class="price-period">/mês</span>
+                        </div>
+                        <div class="plan-price annual-price" style="display: none;">
+                            <span class="price-current">R$ 1.889</span>
+                            <span class="price-period">/ano</span>
+                            <span class="price-savings">Economize R$ 475</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-device">
+                        <div class="device-selection">
+                            <span class="device-title">Escolha seu dispositivo:</span>
+                            <div class="device-options">
+                                <label class="device-option">
+                                    <input type="radio" name="device-prof" value="hydrobot" checked>
+                                    <span class="device-name">🌱 HydroBot Pro</span>
+                                    <span class="device-price">+ R$ 3.499</span>
+                                </label>
+                                <label class="device-option">
+                                    <input type="radio" name="device-prof" value="geobot">
+                                    <span class="device-name">🌍 GeoBot</span>
+                                    <span class="device-price">+ R$ 3.499</span>
+                                </label>
+                                <label class="device-option">
+                                    <input type="radio" name="device-prof" value="aquabot">
+                                    <span class="device-name">🐟 AquaBot</span>
+                                    <span class="device-price">+ R$ 4.999</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <h4>Tudo do Starter +</h4>
+                        <ul>
+                            <li>✅ <strong>Iara Avançada:</strong> IA com aprendizado de máquina</li>
+                            <li>✅ <strong>Análise Preditiva:</strong> Previsão de pragas e problemas</li>
+                            <li>✅ <strong>Otimização Automática:</strong> IA otimiza crescimento continuamente</li>
+                            <li>✅ <strong>Relatórios Detalhados:</strong> Analytics completos de produtividade</li>
+                            <li>✅ <strong>Integração Climática:</strong> Previsão do tempo integrada</li>
+                            <li>✅ <strong>Suporte Prioritário:</strong> WhatsApp direto com especialistas</li>
+                            <li>✅ <strong>Múltiplos Ciclos:</strong> Até 50 plantas ou 1 hectare</li>
+                            <li>✅ <strong>API Personalizada:</strong> Integre com outros sistemas</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-button">
+                        <button class="btn-primary full-width">Escolher Professional</button>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>🏢 Iara Enterprise</h3>
+                        <p class="plan-subtitle">Para fazendas e empresas</p>
+                        <div class="plan-price">
+                            <span class="price-current">R$ 497</span>
+                            <span class="price-period">/mês</span>
+                        </div>
+                        <div class="plan-price annual-price" style="display: none;">
+                            <span class="price-current">R$ 4.769</span>
+                            <span class="price-period">/ano</span>
+                            <span class="price-savings">Economize R$ 1.195</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-device">
+                        <div class="device-info">
+                            <span class="device-name">Múltiplos Dispositivos</span>
+                            <span class="device-price">Preços sob consulta</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <h4>Tudo do Professional +</h4>
+                        <ul>
+                            <li>✅ <strong>Iara Enterprise:</strong> IA com análise de big data</li>
+                            <li>✅ <strong>Múltiplas Fazendas:</strong> Gerencie vários locais</li>
+                            <li>✅ <strong>Dashboard Executivo:</strong> KPIs e métricas de negócio</li>
+                            <li>✅ <strong>Integração ERP:</strong> Conecte com sistemas corporativos</li>
+                            <li>✅ <strong>Consultoria Especializada:</strong> Agrônomo dedicado</li>
+                            <li>✅ <strong>SLA Garantido:</strong> 99.9% de disponibilidade</li>
+                            <li>✅ <strong>Treinamento Equipe:</strong> Capacitação completa</li>
+                            <li>✅ <strong>Suporte 24/7:</strong> Atendimento especializado</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-button">
+                        <button class="btn-outline full-width">Falar com Vendas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="plan-comparison">
+        <div class="container">
+            <h2 class="section-title">Compare Todos os Planos</h2>
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="comparison-item">
+                        <h3>Recursos</h3>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>🌱 Starter</h3>
+                        <p>R$ 97/mês</p>
+                    </div>
+                    <div class="comparison-item popular-header">
+                        <h3>🚀 Professional</h3>
+                        <p>R$ 197/mês</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>🏢 Enterprise</h3>
+                        <p>R$ 497/mês</p>
+                    </div>
+                </div>
+                
+                <div class="comparison-category">
+                    <div class="category-title">Inteligência Artificial Iara</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">Monitoramento básico (pH, EC, temp.)</div>
+                    <div class="comparison-item">✅</div>
+                    <div class="comparison-item">✅</div>
+                    <div class="comparison-item">✅</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">Aprendizado de máquina avançado</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">✅</div>
+                    <div class="comparison-item">✅</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">Análise preditiva de pragas</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">✅</div>
+                    <div class="comparison-item">✅</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">Big Data e Analytics</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">✅</div>
+                </div>
+                
+                <div class="comparison-category">
+                    <div class="category-title">Dispositivos IoT</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">HydroBot básico</div>
+                    <div class="comparison-item">✅</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">❌</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">HydroBot/GeoBot/AquaBot Pro</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">✅ (1 dispositivo)</div>
+                    <div class="comparison-item">✅ (Múltiplos)</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">Múltiplas fazendas</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">✅</div>
+                </div>
+                
+                <div class="comparison-category">
+                    <div class="category-title">Suporte e Integrações</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">Suporte por chat</div>
+                    <div class="comparison-item">✅</div>
+                    <div class="comparison-item">✅</div>
+                    <div class="comparison-item">✅</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">Suporte prioritário WhatsApp</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">✅</div>
+                    <div class="comparison-item">✅</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">Consultoria especializada</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">✅</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-item">SLA 99.9% + Suporte 24/7</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">❌</div>
+                    <div class="comparison-item">✅</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-ons Section -->
+    <section class="addons-section">
+        <div class="container">
+            <h2 class="section-title">Complementos Opcionais</h2>
+            <p class="section-subtitle">Potencialize ainda mais sua experiência com Iara</p>
+            <div class="addons-grid">
+                <div class="addon-card">
+                    <div class="addon-icon">📱</div>
+                    <h3>App Premium</h3>
+                    <p>Interface avançada com widgets personalizáveis, notificações inteligentes e controle por voz.</p>
+                    <div class="addon-price">+R$ 29/mês</div>
+                </div>
+                
+                <div class="addon-card">
+                    <div class="addon-icon">📊</div>
+                    <h3>Analytics Pro</h3>
+                    <p>Dashboards executivos, relatórios customizados e exportação de dados para Excel/PDF.</p>
+                    <div class="addon-price">+R$ 49/mês</div>
+                </div>
+                
+                <div class="addon-card">
+                    <div class="addon-icon">🌦️</div>
+                    <h3>Estação Meteorológica</h3>
+                    <p>Dados climáticos ultra-precisos da sua propriedade integrados com Iara.</p>
+                    <div class="addon-price">+R$ 799 (equipamento)</div>
+                </div>
+                
+                <div class="addon-card">
+                    <div class="addon-icon">🎓</div>
+                    <h3>Consultoria Mensal</h3>
+                    <p>1 hora/mês com agrônomo especialista para otimizar sua produção.</p>
+                    <div class="addon-price">+R$ 199/mês</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="roi-calculator">
+        <div class="container">
+            <h2 class="section-title">Calcule seu Retorno sobre Investimento</h2>
+            <div class="calculator-container">
+                <div class="calculator-inputs">
+                    <h3>Suas informações:</h3>
+                    <div class="input-group">
+                        <label>Tipo de cultivo:</label>
+                        <select id="cultivo-tipo">
+                            <option value="hidroponia">Hidroponia (apartamento)</option>
+                            <option value="quintal">Quintal/horta caseira</option>
+                            <option value="sitio">Sítio/fazenda pequena</option>
+                            <option value="fazenda">Fazenda comercial</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Gasto mensal com vegetais/frutas:</label>
+                        <input type="range" id="gasto-mensal" min="100" max="2000" value="400">
+                        <span id="gasto-valor">R$ 400</span>
+                    </div>
+                    <div class="input-group">
+                        <label>Horas semanais dedicadas ao cultivo:</label>
+                        <input type="range" id="horas-semanais" min="1" max="40" value="8">
+                        <span id="horas-valor">8 horas</span>
+                    </div>
+                </div>
+                
+                <div class="calculator-results">
+                    <h3>Sua economia com Iara:</h3>
+                    <div class="result-item">
+                        <span class="result-label">Economia mensal em alimentos:</span>
+                        <span class="result-value" id="economia-alimentos">R$ 280</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Valor das horas economizadas:</span>
+                        <span class="result-value" id="economia-tempo">R$ 320</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Economia total mensal:</span>
+                        <span class="result-value total" id="economia-total">R$ 600</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">ROI em 12 meses:</span>
+                        <span class="result-value roi" id="roi-anual">178%</span>
+                    </div>
+                    <div class="calculator-recommendation">
+                        <p><strong>Recomendação:</strong> <span id="plano-recomendado">Iara Professional com HydroBot</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes sobre os Planos</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Posso mudar de plano depois?</h3>
+                    <p>Sim! Você pode fazer upgrade ou downgrade do seu plano a qualquer momento. Mudanças são aplicadas no próximo ciclo de cobrança.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>O que acontece se eu cancelar?</h3>
+                    <p>Você mantém acesso às funcionalidades até o final do período pago. O dispositivo IoT continua funcionando em modo básico (sem IA).</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Posso usar Iara sem dispositivo?</h3>
+                    <p>Não. Iara é uma IA especificamente desenvolvida para controlar nossos dispositivos IoT. Ela precisa dos sensores para funcionar.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Tem garantia no equipamento?</h3>
+                    <p>Sim! Todos os dispositivos têm 2 anos de garantia completa + 1 ano adicional de garantia estendida opcional.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Iara funciona offline?</h3>
+                    <p>Iara precisa de internet para funcionalidades avançadas, mas mantém operações críticas (irrigação, temperatura) offline por até 72h.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Posso ter múltiplos dispositivos?</h3>
+                    <p>Sim! No plano Professional você pode adicionar mais dispositivos. No Enterprise, múltiplos dispositivos e fazendas são inclusos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Comece sua Revolução Agrícola Hoje</h2>
+                <p>Junte-se a milhares de pessoas que já descobriram como é ter uma IA Agricultora cuidando do cultivo 24 horas por dia.</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary large">Teste Iara por 30 Dias</button>
+                    <button class="btn-outline large">Fale com um Especialista</button>
+                </div>
+                <p class="cta-guarantee">🛡️ Garantia de satisfação de 30 dias ou seu dinheiro de volta</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌱 FarmBot</h3>
+                    <p>Sua IA pessoal que cultiva para você. Inteligência artificial que controla dispositivos IoT para hidroponia, agricultura tradicional e aquaponia.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Planos</h4>
+                    <ul>
+                        <li><a href="#starter">Starter - R$ 97/mês</a></li>
+                        <li><a href="#professional">Professional - R$ 197/mês</a></li>
+                        <li><a href="#enterprise">Enterprise - R$ 497/mês</a></li>
+                        <li><a href="#teste">Teste grátis 30 dias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Documentação Técnica</a></li>
+                        <li><a href="#">Tutoriais de Instalação</a></li>
+                        <li><a href="#">Status dos Dispositivos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>📧 contato@farmbot.com.br</li>
+                        <li>📞 +55 11 9999-9999</li>
+                        <li>📍 São Paulo, SP</li>
+                        <li>🤖 Iara@farmbot.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FarmBot. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Pricing toggle functionality
+        const toggle = document.getElementById('pricing-toggle');
+        const monthlyPrices = document.querySelectorAll('.plan-price:not(.annual-price)');
+        const annualPrices = document.querySelectorAll('.annual-price');
+        
+        toggle.addEventListener('change', function() {
+            monthlyPrices.forEach(price => {
+                price.style.display = this.checked ? 'none' : 'block';
+            });
+            annualPrices.forEach(price => {
+                price.style.display = this.checked ? 'block' : 'none';
+            });
+        });
+        
+        // ROI Calculator
+        const gastoSlider = document.getElementById('gasto-mensal');
+        const horasSlider = document.getElementById('horas-semanais');
+        const gastoValor = document.getElementById('gasto-valor');
+        const horasValor = document.getElementById('horas-valor');
+        
+        gastoSlider.addEventListener('input', updateCalculator);
+        horasSlider.addEventListener('input', updateCalculator);
+        
+        function updateCalculator() {
+            const gastoMensal = parseInt(gastoSlider.value);
+            const horasSemanais = parseInt(horasSlider.value);
+            
+            gastoValor.textContent = `R$ ${gastoMensal}`;
+            horasValor.textContent = `${horasSemanais} horas`;
+            
+            // Cálculos de economia
+            const economiaAlimentos = Math.round(gastoMensal * 0.7);
+            const economiaTempo = Math.round(horasSemanais * 4 * 10); // R$ 10/hora
+            const economiaTotal = economiaAlimentos + economiaTempo;
+            const custoPlano = 197; // Professional
+            const roi = Math.round(((economiaTotal * 12 - custoPlano * 12) / (custoPlano * 12)) * 100);
+            
+            document.getElementById('economia-alimentos').textContent = `R$ ${economiaAlimentos}`;
+            document.getElementById('economia-tempo').textContent = `R$ ${economiaTempo}`;
+            document.getElementById('economia-total').textContent = `R$ ${economiaTotal}`;
+            document.getElementById('roi-anual').textContent = `${roi}%`;
+            
+            // Recomendação de plano
+            let recomendacao = '';
+            if (gastoMensal < 200) {
+                recomendacao = 'Iara Starter com HydroBot';
+            } else if (gastoMensal < 800) {
+                recomendacao = 'Iara Professional com HydroBot';
+            } else {
+                recomendacao = 'Iara Enterprise com múltiplos dispositivos';
+            }
+            document.getElementById('plano-recomendado').textContent = recomendacao;
+        }
+        
+        // Initialize calculator
+        updateCalculator();
+    </script>
+</body>
+</html>
