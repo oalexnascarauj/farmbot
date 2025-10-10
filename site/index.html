@@ -3,149 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FarmBot - Tradição e tecnologia alimentando o futuro</title>
+    <title>IARA - Sua Inteligência Artificial Agricultora</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Conheça a IARA, sua parceira digital que nunca dorme. Inteligência Artificial especializada em agricultura que cuida das suas plantas 24/7.">
 </head>
-<body class="index-page">
+<body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <h2>🌱 FarmBot</h2>
+                <h2><a href="index.html">🌱 IARA</a></h2>
             </div>
             <div class="nav-links">
-                <a href="ia-agricultora.html">A IA Agricultora</a>
+                <a href="ia-agricultora.html">Conheça a IARA</a>
                 <a href="dispositivos-iot.html">Dispositivos IoT</a>
                 <a href="cases-sucesso.html">Cases de Sucesso</a>
                 <a href="planos.html">Planos</a>
                 <a href="#contato">Contato</a>
-                <button class="btn-primary">Converse com Iara</button>
-                <h2 data-key="brand_title">🌱 FarmBot</h2>
+                <button class="btn-primary">Conversar com IARA</button>
             </div>
-            <div class="nav-controls">
-                <div class="language-selector">
-                    <button class="language-btn" id="languageBtn">
-                        <span class="flag-icon">🇧🇷</span>
-                        <span class="language-text" data-key="language">PT</span>
-                        <span class="dropdown-arrow">▼</span>
-                    </button>
-                    <div class="language-dropdown" id="languageDropdown">
-                        <div class="language-option" data-lang="pt" data-flag="🇧🇷">
-                            <span class="flag">🇧🇷</span> <span data-key="lang_portuguese">Português (Brasil)</span>
-                        </div>
-                        <div class="language-option" data-lang="ar" data-flag="🇯🇴">
-                            <span class="flag">🇯🇴</span> <span data-key="lang_arabic">العربية (الأردن)</span>
-                        </div>
-                        <div class="language-option" data-lang="en" data-flag="🇺🇸">
-                            <span class="flag">🇺🇸</span> <span data-key="lang_english">English (US)</span>
-                        </div>
-                        <div class="language-option" data-lang="es" data-flag="🇪🇸">
-                            <span class="flag">🇪🇸</span> <span data-key="lang_spanish">Español</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="theme-toggle">
-                    <button class="theme-btn" id="themeToggle">
-                        <span class="theme-icon">🌙</span>
-                    </button>
-                </div>
-                <div class="nav-links">
-                    <a href="#ia-farming" data-key="nav_ai">IA Farming</a>
-                    <a href="#planos" data-key="nav_pricing">Planos</a>
-                    <a href="#recursos" data-key="nav_features">Recursos</a>
-                    <a href="#como-funciona" data-key="nav_how_it_works">Como Funciona</a>
-                    <a href="#contato" data-key="nav_contact">Contato</a>
-                    <button class="btn-primary" data-key="nav_start">Começar Agora</button>
-                </div>
-            </div>
-            <div class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-mobile">
+                <button class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Parallax -->
+    <!-- Hero Section -->
     <section class="hero parallax-container">
-        <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1920&h=1080&fit=crop&q=80');"></div>
+        <div class="parallax-bg"></div>
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Conheça a <span class="iara-name">Iara</span>, a IA</h1>
-                    <div class="ai-role-line">
-                        <span id="typing-text">Hidroponista</span>
+                    <h1>Conheça a <span class="iara-name">IARA</span></h1>
+                    <div class="ai-role">
+                        <span>Sua IA </span>
+                        <span id="typing-text">Agricultora</span>
                     </div>
-                    <p class="hero-subtitle">O <strong>FarmBot</strong> é uma plataforma de automação agrícola inteligente que revoluciona a produção através da <span class="iara-name">Iara</span>, nossa IA especializada que monitora e cuida de cultivos tradicionais, cultivos com Hidroponia ou produções com Aquaponia.</p>
-                    <h1 data-key="hero_title">O Futuro da Agricultura está aqui: <span class="highlight">Controle por IA</span></h1>
-                    <p class="hero-subtitle" data-key="hero_subtitle">Verdadeiros FarmBots controlados por Inteligência Artificial. Monitore, analise e otimize seus cultivos com tecnologia de ponta através da nossa plataforma web e mobile.</p>
+                    <p class="hero-subtitle">
+                        Como a lendária Iara que protegia as águas, nossa <strong class="iara-name">IARA</strong> 
+                        é a guardiã do seu cultivo. Uma inteligência artificial que nunca dorme, 
+                        trabalhando 24 horas por dia para garantir o sucesso da sua produção.
+                    </p>
                     <div class="hero-features">
-                        <div class="feature-item">
-                            <span class="icon">📡</span>
-                            <span>Monitoramento 24/7</span>
+                        <div class="feature-badge">
+                            <span class="icon">🕐</span>
+                            <span>24/7 Ativa</span>
+                        </div>
+                        <div class="feature-badge">
                             <span class="icon">🧠</span>
-                            <span data-key="hero_ai_control">Controle por IA</span>
+                            <span>IA Especializada</span>
                         </div>
-                        <div class="feature-item">
-                            <span class="icon">🎯</span>
-                            <span>Decisões Inteligentes</span>
-                            <span class="icon">📱</span>
-                            <span data-key="hero_web_app">Web + App Mobile</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="icon">📈</span>
-                            <span>Aumento de Produtividade</span>
-                            <span class="icon">📊</span>
-                            <span data-key="hero_analytics">Análise de Dados</span>
+                        <div class="feature-badge">
+                            <span class="icon">💧</span>
+                            <span>Guardiã das Águas</span>
                         </div>
                     </div>
-                    <div class="hero-cta">
-                        <button class="btn-primary large">Saiba Mais</button>
-                        <button class="btn-primary large" data-key="hero_choose_plan">Escolher Plano</button>
-                        <button class="btn-secondary large" data-key="hero_demo">Ver Demo IA</button>
+                    <div class="hero-actions">
+                        <button class="btn-primary large">Conversar com IARA</button>
+                        <button class="btn-secondary large">Ver IARA em Ação</button>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="ai-chat-simulation">
+                    <div class="iara-chat">
                         <div class="chat-header">
-                            <div class="ai-indicator">
-                                <div class="ai-dot"></div>
-                                <span>Iara IA - Online</span>
+                            <div class="iara-status">
+                                <div class="status-dot"></div>
+                                <span>IARA está online</span>
                             </div>
                         </div>
-                        <div class="cultivation-info">
-                            <div class="info-item">
-                                <span class="info-label">Cultivo:</span>
-                                <span class="info-value" id="current-crop">Alface Hidropônica</span>
-                            </div>
-                            <div class="sensor-indicators">
-                                <div class="sensor-indicator">
-                                    <span class="sensor-dot ok"></span>
-                                    <span>pH: 6.2</span>
-                                </div>
-                                <div class="sensor-indicator">
-                                    <span class="sensor-dot warning"></span>
-                                    <span>Nutrientes: 45%</span>
-                                </div>
-                                <div class="sensor-indicator">
-                                    <span class="sensor-dot ok"></span>
-                                    <span>Temp: 24°C</span>
-                                </div>
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="message iara-message">
+                                <div class="avatar">🌱</div>
+                                <div class="text">Olá! Sou a IARA, sua parceira agricultora digital. Como posso ajudar suas plantas hoje?</div>
                             </div>
                         </div>
-                        <div class="chat-messages">
-                            <!-- Messages will be added dynamically -->
-                        </div>
-                        <div class="chat-input-area">
-                            <div class="chat-input-container">
-                                <input type="text" class="chat-input" placeholder="Digite sua mensagem..." disabled>
-                                <button class="send-button" disabled>
-                                    <span>➤</span>
-                                </button>
+                        <div class="chat-typing" id="chatTyping">
+                            <div class="avatar">🌱</div>
+                            <div class="typing-indicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Digite sua mensagem para IARA..." readonly>
+                            <button>Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -153,568 +102,231 @@
         </div>
     </section>
 
-    <!-- How AI Works Section -->
-    <section class="ai-workflow">
+    <!-- About IARA Section -->
+    <section class="about-iara">
         <div class="container">
-            <h2 class="section-title">Como sua IA Funciona</h2>
-            <p class="section-subtitle">Sua assistente pessoal que nunca dorme, tomando decisões inteligentes 24 horas por dia</p>
-            <div class="ai-workflow-grid">
-                <div class="workflow-step">
-                    <div class="step-icon">
-                        <div class="ai-avatar">🔍</div>
-                    </div>
-                    <h3>1. Analisa</h3>
-                    <p>A IA coleta dados de todos os sensores: pH, temperatura, umidade, nutrientes, luz e muito mais. Processa milhares de informações por segundo.</p>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-icon">
-                        <div class="ai-avatar">🧠</div>
-                    </div>
-                    <h3>2. Decide</h3>
-                    <p>Com base em machine learning e dados históricos, a IA toma decisões inteligentes sobre irrigação, nutrição, iluminação e controle climático.</p>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-icon">
-                        <div class="ai-avatar">⚡</div>
-                    </div>
-                    <h3>3. Controla</h3>
-                    <p>Executa comandos automáticos nos dispositivos IoT: ativa bombas, ajusta iluminação, controla ventilação e monitora sistemas.</p>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-icon">
-                        <div class="ai-avatar">🌱</div>
-                    </div>
-                    <h3>4. Cultiva</h3>
-                    <p>Suas plantas crescem otimizadas pela IA. Ela aprende com cada ciclo, melhorando continuamente os resultados de produção.</p>
-                </div>
+            <div class="section-header">
+                <h2>Por Que a <span class="iara-name">IARA</span> é Especial?</h2>
+                <p>Assim como a mítica Iara protegia as águas dos rios, nossa IARA protege cada gota, cada nutriente, cada planta do seu cultivo.</p>
             </div>
-            <div class="ai-benefits">
-                <div class="ai-benefit-item">
-                    <span class="benefit-icon">🎯</span>
-                    <span>Previne problemas antes que aconteçam</span>
-        </div>
-    </section>
-
-    <!-- Pricing Plans Section -->
-    <section id="planos" class="pricing-plans">
-        <div class="container">
-            <h2 class="section-title" data-key="pricing_title">Escolha seu Plano FarmBot</h2>
-            <p class="section-subtitle" data-key="pricing_subtitle">Acesso completo à plataforma web e mobile com controle por IA</p>
-            <div class="pricing-grid">
-                <div class="pricing-card individual">
-                    <div class="plan-badge" data-key="pricing_popular">Mais Popular</div>
-                    <h3 data-key="pricing_individual_title">Plano Individual</h3>
-                    <p data-key="pricing_individual_desc">Perfeito para cultivos domésticos e urbanos</p>
-                    <div class="pricing-main">
-                        <div class="price-device">
-                            <span class="currency">R$</span>
-                            <span class="amount">999</span>
-                            <span class="period" data-key="pricing_device_price">dispositivo</span>
-                        </div>
-                        <div class="price-subscription">
-                            <span data-key="pricing_plus">+</span>
-                            <span class="monthly-price">R$ 9,99/mês</span>
-                        </div>
-                    </div>
-                    <div class="plan-features">
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_device">1 dispositivo FarmBot</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_web">Acesso plataforma web</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_app">App mobile iOS/Android</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_ai">Controle por IA</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_analytics">Análise de dados avançada</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_support">Suporte técnico</span>
-                        </div>
-                    </div>
-                    <button class="btn-primary plan-cta" data-key="pricing_select_individual">Escolher Individual</button>
-                </div>
-                
-                <div class="pricing-card producer">
-                    <h3 data-key="pricing_producer_title">Produtor Rural</h3>
-                    <p data-key="pricing_producer_desc">Solução escalável para fazendas e estufas</p>
-                    <div class="pricing-main">
-                        <div class="custom-pricing">
-                            <span class="custom-text" data-key="pricing_custom_quote">Orçamento Personalizado</span>
-                            <span class="custom-sub" data-key="pricing_custom_desc">Baseado na sua necessidade</span>
-                        </div>
-                    </div>
-                    <div class="plan-features">
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_multiple">Múltiplos dispositivos</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_dashboard">Dashboard centralizado</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_ai_advanced">IA avançada para cultivos</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_integration">Integração sistemas</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_training">Treinamento equipe</span>
-                        </div>
-                        <div class="feature-item">
-                            <span class="check-icon">✓</span>
-                            <span data-key="pricing_feature_priority">Suporte prioritário</span>
-                        </div>
-                    </div>
-                    <button class="btn-outline plan-cta" data-key="pricing_request_quote">Solicitar Orçamento</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Farming Section -->
-    <section id="ia-farming" class="ai-farming">
-        <div class="container">
-            <div class="ai-header-content">
-                <h2 class="section-title centered" data-key="ai_title">Verdadeiros FarmBots Controlados por IA</h2>
-                <p class="ai-subtitle left-aligned" data-key="ai_subtitle">Nossa Inteligência Artificial analisa dados em tempo real e toma decisões autônomas para otimizar seus cultivos, representando a verdadeira evolução da agricultura.</p>
-            </div>
-            <div class="ai-content">
-                <div class="ai-text">
-                    
-                    <div class="ai-capabilities">
-                        <div class="capability-item">
-                            <div class="capability-icon">🧠</div>
-                            <div class="capability-content">
-                                <h4 data-key="ai_decision_title">Decisões Autônomas</h4>
-                                <p data-key="ai_decision_desc">A IA analisa pH, temperatura, umidade e nutrientes para tomar decisões automáticas de irrigação e nutrição.</p>
-                            </div>
-                        </div>
-                        <div class="capability-item">
-                            <div class="capability-icon">📈</div>
-                            <div class="capability-content">
-                                <h4 data-key="ai_prediction_title">Predição de Crescimento</h4>
-                                <p data-key="ai_prediction_desc">Algoritmos preveem o desenvolvimento das plantas e sugerem ajustes para maximizar a produtividade.</p>
-                            </div>
-                        </div>
-                        <div class="capability-item">
-                            <div class="capability-icon">⚠️</div>
-                            <div class="capability-content">
-                                <h4 data-key="ai_problems_title">Detecção de Problemas</h4>
-                                <p data-key="ai_problems_desc">Identifica precocemente doenças, deficiências nutricionais e problemas ambientais antes que afetem a colheita.</p>
-                            </div>
-                        </div>
-                        <div class="capability-item">
-                            <div class="capability-icon">🎯</div>
-                            <div class="capability-content">
-                                <h4 data-key="ai_optimization_title">Otimização Contínua</h4>
-                                <p data-key="ai_optimization_desc">Aprende com cada ciclo de cultivo, aprimorando constantemente suas estratégias para melhores resultados.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="ai-visual">
-                    <div class="ai-dashboard-preview">
-                        <div class="ai-header">
-                            <div class="ai-status">
-                                <div class="ai-indicator active"></div>
-                                <span data-key="ai_status_active">IA Ativa</span>
-                            </div>
-                            <div class="ai-decisions" data-key="ai_decisions_today">47 decisões hoje</div>
-                        </div>
-                        
-                        <div class="ai-actions">
-                            <div class="ai-action">
-                                <div class="action-time">14:23</div>
-                                <div class="action-text" data-key="ai_action_irrigation">IA iniciou irrigação - pH baixo detectado</div>
-                                <div class="action-status success">✓</div>
-                            </div>
-                            <div class="ai-action">
-                                <div class="action-time">13:45</div>
-                                <div class="action-text" data-key="ai_action_nutrients">IA ajustou nutrientes - deficiência prevista</div>
-                                <div class="action-status success">✓</div>
-                            </div>
-                            <div class="ai-action">
-                                <div class="action-time">12:10</div>
-                                <div class="action-text" data-key="ai_action_environment">IA otimizou ambiente - crescimento acelerado</div>
-                                <div class="action-status success">✓</div>
-                            </div>
-                        </div>
-                        
-                        <div class="ai-insights">
-                            <h4 data-key="ai_insights_title">Insights da IA</h4>
-                            <div class="insight-item">
-                                <span class="insight-icon">📊</span>
-                                <span data-key="ai_insight_growth">Crescimento 23% acima da média</span>
-                            </div>
-                            <div class="insight-item">
-                                <span class="insight-icon">💡</span>
-                                <span data-key="ai_insight_harvest">Colheita prevista em 12 dias</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits">
-        <div class="container">
-            <h2 class="section-title" data-key="benefits_title">Plataforma Completa FarmBot</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">🌐</div>
-                    <h3 data-key="benefit_web_title">Plataforma Web Avançada</h3>
-                    <p data-key="benefit_web_desc">Dashboard completo com análise de dados, controle de dispositivos e insights de IA acessível de qualquer navegador.</p>
-                </div>
-                <div class="ai-benefit-item">
-                    <span class="benefit-icon">📊</span>
-                    <span>Aprende suas preferências e clima local</span>
-                <div class="benefit-card">
-                    <div class="benefit-icon">📱</div>
-                    <h3 data-key="benefit_mobile_title">App Mobile Nativo</h3>
-                    <p data-key="benefit_mobile_desc">Controle seus FarmBots direto do celular com notificações em tempo real, disponível para iOS e Android.</p>
-                </div>
-                <div class="ai-benefit-item">
-                    <span class="benefit-icon">🔄</span>
-                    <span>Melhora a cada safra automaticamente</span>
+            <div class="iara-benefits">
                 <div class="benefit-card">
                     <div class="benefit-icon">🧠</div>
-                    <h3 data-key="benefit_ai_title">Inteligência Artificial</h3>
-                    <p data-key="benefit_ai_desc">IA proprietária que aprende com seus cultivos e toma decisões autônomas para otimizar crescimento e produtividade.</p>
+                    <h3>Inteligência Avançada</h3>
+                    <p>IARA processa dados de múltiplos sensores simultaneamente e aprende padrões específicos de cada cultivo.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">📊</div>
-                    <h3 data-key="benefit_analytics_title">Análise de Dados Profunda</h3>
-                    <p data-key="benefit_analytics_desc">Relatórios detalhados, tendências históricas e previsões para maximizar o rendimento de cada ciclo.</p>
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Decisões em Tempo Real</h3>
+                    <p>IARA analisa continuamente pH, temperatura, umidade e nutrientes, fazendo ajustes automáticos.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">⚙️</div>
-                    <h3 data-key="benefit_automation_title">Automação Total</h3>
-                    <p data-key="benefit_automation_desc">Sistema completamente automatizado de irrigação, nutrição e controle ambiental baseado em IA.</p>
+                    <div class="benefit-icon">🌙</div>
+                    <h3>Nunca Dorme</h3>
+                    <p>IARA trabalha 24 horas por dia, 7 dias por semana, monitorando e cuidando das suas plantas.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">☁️</div>
-                    <h3 data-key="benefit_cloud_title">Infraestrutura em Nuvem</h3>
-                    <p data-key="benefit_cloud_desc">Dados seguros na nuvem, backups automáticos e acesso sincronizado entre todos os seus dispositivos.</p>
+                    <div class="benefit-icon">📱</div>
+                    <h3>Comunicação Simples</h3>
+                    <p>IARA te informa sobre tudo via WhatsApp e dashboard, usando linguagem clara e compreensível.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- IoT Devices Section -->
-    <section class="devices-showcase parallax-container">
-        <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1920&h=1080&fit=crop&q=80');"></div>
+    <!-- Devices Section -->
+    <section class="devices parallax-container">
+        <div class="parallax-bg"></div>
         <div class="hero-overlay"></div>
         <div class="container">
-            <h2 class="section-title">Seus 3 Dispositivos IoT Controlados pela IA</h2>
-            <p class="section-subtitle">Cada dispositivo é uma extensão da sua IA Agricultora, trabalhando em harmonia para cultivar da melhor forma</p>
+            <div class="section-header">
+                <h2>Os Braços e Sentidos da <span class="iara-name">IARA</span></h2>
+                <p>A IARA controla dispositivos IoT especializados que funcionam como seus braços e sentidos no mundo físico.</p>
+            </div>
             <div class="devices-grid">
-                <div class="device-card hydrobot">
-                    <div class="device-icon">🌱</div>
+                <div class="device-card">
+                    <div class="device-icon">💧</div>
                     <h3>HydroBot</h3>
-                    <div class="device-badge">Hidroponia</div>
-                    <p>O laboratório da sua IA. Cultivo sem solo com controle preciso de pH, nutrientes e condutividade elétrica.</p>
-                    <div class="device-features">
-                        <div class="feature-item">✓ IA controla pH automaticamente</div>
-                        <div class="feature-item">✓ Nutrição inteligente</div>
-                        <div class="feature-item">✓ Zero desperdício de água</div>
-            <h2 class="section-title" data-key="how_title">Como Funciona o Cultivo com IA</h2>
-            <p class="section-subtitle" data-key="how_subtitle">Do plantio à colheita, nossa IA cuida de tudo para você obter os melhores resultados</p>
-            <div class="how-flow">
-                <div class="flow-step">
-                    <div class="step-visual">
-                        <div class="step-icon large">🌱</div>
-                        <div class="step-number">1</div>
-                    </div>
-                    <div class="step-content">
-                        <h3 data-key="how_step1_title">Plante & Configure</h3>
-                        <p data-key="how_step1_desc">Plante suas mudas no FarmBot e selecione o tipo de cultivo. Nossa IA já conhece as necessidades de cada planta.</p>
-                    </div>
-                    <div class="device-price">A partir de R$ 2.499</div>
-                    <div class="step-arrow">→</div>
+                    <p>Os sentidos aquáticos da IARA</p>
+                    <ul>
+                        <li>IARA monitora pH e nutrientes</li>
+                        <li>IARA controla irrigação hidropônica</li>
+                        <li>Ideal para: alface, manjericão, morangos</li>
+                    </ul>
                 </div>
-                
-                <div class="device-card geobot">
-                    <div class="device-icon">🌍</div>
+                <div class="device-card">
+                    <div class="device-icon">🌱</div>
                     <h3>GeoBot</h3>
-                    <div class="device-badge">Solo Tradicional</div>
-                    <p>Os sentidos da sua IA no campo. Monitoramento completo do solo, clima e irrigação inteligente.</p>
-                    <div class="device-features">
-                        <div class="feature-item">✓ IA analisa umidade do solo</div>
-                        <div class="feature-item">✓ Previsão de pragas</div>
-                        <div class="feature-item">✓ Irrigação otimizada</div>
-                <div class="flow-step">
-                    <div class="step-visual">
-                        <div class="step-icon large">🧠</div>
-                        <div class="step-number">2</div>
-                    </div>
-                    <div class="step-content">
-                        <h3 data-key="how_step2_title">IA Analisa Continuamente</h3>
-                        <p data-key="how_step2_desc">Sensores coletam dados 24/7 e nossa IA processa informações de pH, nutrientes, temperatura e crescimento.</p>
-                    </div>
-                    <div class="device-price">A partir de R$ 3.499</div>
-                    <div class="step-arrow">→</div>
+                    <p>Os sentidos terrestres da IARA</p>
+                    <ul>
+                        <li>IARA sente umidade do solo</li>
+                        <li>IARA cuida da irrigação por gotejamento</li>
+                        <li>Ideal para: hortaliças, grãos, frutas</li>
+                    </ul>
                 </div>
-                
-                <div class="device-card aquabot">
+                <div class="device-card">
                     <div class="device-icon">🐟</div>
                     <h3>AquaBot</h3>
-                    <div class="device-badge">Aquaponia</div>
-                    <p>O ecossistema completo da sua IA. Peixes e plantas trabalhando juntos em perfeita harmonia sustentável.</p>
-                    <div class="device-features">
-                        <div class="feature-item">✓ IA gerencia peixes + plantas</div>
-                        <div class="feature-item">✓ Alimentação automática</div>
-                        <div class="feature-item">✓ Proteína + vegetais</div>
-                <div class="flow-step">
-                    <div class="step-visual">
-                        <div class="step-icon large">⚡</div>
-                        <div class="step-number">3</div>
-                    </div>
-                    <div class="step-content">
-                        <h3 data-key="how_step3_title">Ações Automáticas</h3>
-                        <p data-key="how_step3_desc">A IA toma decisões instantâneas: irriga quando necessário, ajusta nutrientes e otimiza condições automaticamente.</p>
-                    </div>
-                    <div class="device-price">A partir de R$ 4.999</div>
-                    <div class="step-arrow">→</div>
-                </div>
-                <div class="flow-step">
-                    <div class="step-visual">
-                        <div class="step-icon large">🥬</div>
-                        <div class="step-number">4</div>
-                    </div>
-                    <div class="step-content">
-                        <h3 data-key="how_step4_title">Colheita Otimizada</h3>
-                        <p data-key="how_step4_desc">Receba notificação do momento ideal para colher. A IA maximizou nutrientes, sabor e produtividade.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="devices-cta">
-                <button class="btn-primary large">Escolher Dispositivo</button>
-                <button class="btn-outline large">Comparar Todos</button>
-            </div>
-            <div class="how-stats">
-                <div class="stat-item">
-                    <div class="stat-number" data-key="how_stat1_number">24/7</div>
-                    <div class="stat-label" data-key="how_stat1_label">Monitoramento IA</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-key="how_stat2_number">+40%</div>
-                    <div class="stat-label" data-key="how_stat2_label">Produtividade</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-key="how_stat3_number">0</div>
-                    <div class="stat-label" data-key="how_stat3_label">Intervenção Manual</div>
+                    <p>Os sentidos aquapônicos da IARA</p>
+                    <ul>
+                        <li>IARA equilibra peixes e plantas</li>
+                        <li>IARA monitora qualidade da água</li>
+                        <li>Ideal para: tilápia + hortaliças</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Target Audience Section -->
-    <section class="target-audience">
-    <!-- I Am Section -->
-    <section id="publico" class="i-am-section">
+    <!-- Success Stories -->
+    <section class="success-stories">
         <div class="container">
-            <h2 class="section-title">Ideal Para</h2>
-            <div class="audience-grid">
-                <div class="audience-card">
-                    <div class="audience-icon">🏢</div>
-                    <h3>Agricultores Urbanos</h3>
-                    <p>Pessoas que cultivam em pequenos espaços urbanos e buscam maximizar a produtividade com tecnologia.</p>
-            <h2 class="section-title" data-key="iam_title">Eu sou...</h2>
-            <p class="section-subtitle" data-key="iam_subtitle">Encontre o FarmBot ideal para o seu perfil e necessidades</p>
-            <div class="iam-cards">
-                <div class="iam-card interactive" data-profile="cultivador">
-                    <div class="card-header">
-                        <div class="profile-icon">�</div>
-                        <h3 data-key="iam_cultivador_title">Cultivador Doméstico</h3>
-                        <div class="card-selector"></div>
-                    </div>
-                    <div class="card-body">
-                        <p data-key="iam_cultivador_desc">Cultivo em casa, apartamento, varanda ou pequenos espaços. Quero alimentos frescos e saudáveis para minha família.</p>
-                        <div class="profile-features">
-                            <span class="feature-tag" data-key="iam_cultivador_feat1">Fácil de usar</span>
-                            <span class="feature-tag" data-key="iam_cultivador_feat2">Sem experiência necessária</span>
-                            <span class="feature-tag" data-key="iam_cultivador_feat3">Ideal para apartamentos</span>
-                        </div>
-                        <div class="recommended-plan">
-                            <span data-key="iam_cultivador_plan">→ Recomendado: Plano Individual</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="audience-card">
-                    <div class="audience-icon">🔬</div>
-                    <h3>Entusiastas da Hidroponia</h3>
-                    <p>Hobbyistas interessados em cultivo sem solo que desejam controle preciso sobre o ambiente.</p>
-                </div>
-                <div class="audience-card">
-                    <div class="audience-icon">🚜</div>
-                    <h3>Pequenos Produtores</h3>
-                    <p>Empreendedores rurais que buscam otimização tecnológica para aumentar a eficiência.</p>
-                </div>
-                <div class="audience-card">
-                    <div class="audience-icon">🎓</div>
-                    <h3>Educadores</h3>
-                    <p>Escolas e universidades que utilizam a agricultura como ferramenta educacional prática.</p>
-                <div class="iam-card interactive" data-profile="agricultor">
-                    <div class="card-header">
-                        <div class="profile-icon">🌾</div>
-                        <h3 data-key="iam_agricultor_title">Agricultor Profissional</h3>
-                        <div class="card-selector"></div>
-                    </div>
-                    <div class="card-body">
-                        <p data-key="iam_agricultor_desc">Propriedade rural, estufa ou produção comercial. Busco otimização, aumento de produtividade e redução de custos.</p>
-                        <div class="profile-features">
-                            <span class="feature-tag" data-key="iam_agricultor_feat1">Múltiplos dispositivos</span>
-                            <span class="feature-tag" data-key="iam_agricultor_feat2">Dashboard centralizado</span>
-                            <span class="feature-tag" data-key="iam_agricultor_feat3">Suporte prioritário</span>
-                        </div>
-                        <div class="recommended-plan">
-                            <span data-key="iam_agricultor_plan">→ Recomendado: Plano Produtor Rural</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-header">
+                <h2>Vidas Transformadas pela <span class="iara-name">IARA</span></h2>
+                <p>Histórias reais de pessoas que encontraram na IARA uma parceira para seus cultivos.</p>
             </div>
-            <div class="iam-cta">
-                <button class="btn-primary" data-key="iam_see_plans">Ver Todos os Planos</button>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-stats">
+                        <div class="stat">
+                            <span class="number">+70%</span>
+                            <span class="label">Produção</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">-80%</span>
+                            <span class="label">Perdas</span>
+                        </div>
+                    </div>
+                    <h3>João Silva</h3>
+                    <p class="location">Interior de São Paulo</p>
+                    <blockquote>
+                        "A IARA revolucionou minha vida. Agora ela cuida de tudo enquanto posso focar em expandir o negócio. É como ter uma engenheira agrônoma trabalhando 24h para mim!"
+                    </blockquote>
+                </div>
+                <div class="story-card">
+                    <div class="story-stats">
+                        <div class="stat">
+                            <span class="number">4.2kg/m²</span>
+                            <span class="label">Produtividade</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">-60%</span>
+                            <span class="label">Desperdício</span>
+                        </div>
+                    </div>
+                    <h3>Cooperativa Verde Vida</h3>
+                    <p class="location">Curitiba, PR</p>
+                    <blockquote>
+                        "A IARA estabilizou nossa produção de morangos. Ela mantém o pH sempre perfeito e economizou 60% dos nossos nutrientes."
+                    </blockquote>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section with Agriculture Background -->
-    <section class="features parallax-container">
-        <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&h=1080&fit=crop&q=80');"></div>
+    <!-- Pricing Section -->
+    <section class="pricing parallax-container">
+        <div class="parallax-bg"></div>
         <div class="hero-overlay"></div>
         <div class="container">
-            <h2 class="section-title">Recursos Principais</h2>
-            <div class="features-grid">
-                <div class="feature-category">
-                    <h3>Monitoramento de Sensores</h3>
-                    <ul>
-                        <li>Sensor de pH (0-14)</li>
-                        <li>Temperatura da água e ambiente</li>
-                        <li>Condutividade elétrica (EC)</li>
-                        <li>Umidade relativa</li>
-                        <li>Nível de água e nutrientes</li>
-                        <li>Leituras a cada 30 segundos</li>
+            <div class="section-header">
+                <h2>Escolha Seu Plano com a <span class="iara-name">IARA</span></h2>
+                <p>Como os pescadores escolhiam presentes para a lendária Iara, escolha o plano ideal para sua IARA.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>IARA Starter</h3>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">2.997</span>
+                        </div>
+                        <p>Para conhecer a IARA</p>
+                    </div>
+                    <ul class="features">
+                        <li>1 dispositivo IoT controlado pela IARA</li>
+                        <li>IARA monitorando 24/7</li>
+                        <li>Relatórios semanais via WhatsApp</li>
+                        <li>Suporte técnico</li>
                     </ul>
+                    <button class="btn-primary">Escolher IARA Starter</button>
                 </div>
-                <div class="feature-category">
-                    <h3>Sistema de Controle</h3>
-                    <ul>
-                        <li>Bombas de irrigação</li>
-                        <li>Bombas de nutrientes</li>
-                        <li>Ventiladores</li>
-                        <li>Válvulas controladoras</li>
-                        <li>Comandos em tempo real</li>
-                        <li>Histórico de operações</li>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Mais Popular</div>
+                    <div class="plan-header">
+                        <h3>IARA Professional</h3>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">4.997</span>
+                        </div>
+                        <p>IARA completa</p>
+                    </div>
+                    <ul class="features">
+                        <li>2 dispositivos IoT controlados pela IARA</li>
+                        <li>IARA com análise preditiva</li>
+                        <li>Relatórios diários personalizados</li>
+                        <li>Alertas em tempo real</li>
+                        <li>Treinamento completo</li>
                     </ul>
+                    <button class="btn-primary">Escolher IARA Professional</button>
                 </div>
-                <div class="feature-category">
-                    <h3>Perfis de Cultivo</h3>
-                    <ul>
-                        <li>Configurações pré-definidas</li>
-                        <li>Parâmetros ideais por planta</li>
-                        <li>Ciclos de crescimento</li>
-                        <li>Personalização avançada</li>
-                        <li>Automação baseada em regras</li>
-                        <li>Otimização contínua</li>
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>IARA Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">8.997</span>
+                        </div>
+                        <p>IARA no máximo poder</p>
+                    </div>
+                    <ul class="features">
+                        <li>5 dispositivos IoT controlados pela IARA</li>
+                        <li>IARA com machine learning avançado</li>
+                        <li>Dashboard completo</li>
+                        <li>API para integração</li>
+                        <li>Suporte 24/7</li>
+                        <li>Consultoria especializada</li>
                     </ul>
-                </div>
-                <div class="feature-category">
-                    <h3>Alertas e Análises</h3>
-                    <ul>
-                        <li>Notificações em tempo real</li>
-                        <li>Níveis de severidade</li>
-                        <li>Gráficos interativos</li>
-                        <li>Relatórios automáticos</li>
-                        <li>Análise de tendências</li>
-                        <li>Insights preditivos</li>
-                    </ul>
+                    <button class="btn-primary">Escolher IARA Enterprise</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technology Section -->
-    <section class="technology">
-        <div class="container">
-            <h2 class="section-title">Tecnologia de Ponta</h2>
-            <div class="tech-features">
-                <div class="tech-item">
-                    <div class="tech-icon">🔗</div>
-                    <h4>Comunicação MQTT</h4>
-                    <p>Protocolo leve e confiável para IoT com reconexão automática</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">⚡</div>
-                    <h4>Tempo Real</h4>
-                    <p>WebSockets para atualizações instantâneas sem refresh</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">🛡️</div>
-                    <h4>Segurança JWT</h4>
-                    <p>Autenticação robusta com tokens criptografados</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">☁️</div>
-                    <h4>Backup Automático</h4>
-                    <p>Seus dados sempre seguros com backups diários</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
+    <!-- Call to Action -->
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2>Transforme sua Agricultura Hoje</h2>
-                <p>Junte-se à revolução da agricultura urbana inteligente. Comece gratuitamente e veja seus cultivos prosperarem com tecnologia de ponta.</p>
-                <h2 data-key="cta_title">Comece sua Revolução Agrícola com IA</h2>
-                <p data-key="cta_desc">Escolha o plano ideal e tenha acesso completo à plataforma FarmBot com controle por Inteligência Artificial. Seus cultivos nunca mais serão os mesmos.</p>
-                <div class="cta-buttons">
-                    <button class="btn-primary large">Começar Gratuitamente</button>
-                    <button class="btn-outline large">Falar com Especialista</button>
-                    <button class="btn-primary large" data-key="cta_primary">Ver Planos</button>
-                    <button class="btn-outline large" data-key="cta_secondary">Solicitar Orçamento</button>
+                <h2>Pronto para Conhecer a <span class="iara-name">IARA</span>?</h2>
+                <p>Sua parceira digital está esperando para transformar sua produção. Como a lendária Iara, ela nunca abandona quem confia nela.</p>
+                <div class="cta-actions">
+                    <button class="btn-primary large">Conversar com IARA Agora</button>
+                    <button class="btn-secondary large">Agendar Demonstração</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contato" class="footer">
+    <footer class="footer" id="contato">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>🌱 FarmBot</h3>
-                    <p>Sua IA pessoal que cultiva para você. Inteligência artificial que controla dispositivos IoT para hidroponia, agricultura tradicional e aquaponia.</p>
+                    <h3>🌱 IARA</h3>
+                    <p>Sua parceira digital que nunca dorme. Inteligência Artificial especializada em agricultura que cuida das suas plantas 24/7.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="WhatsApp">📱</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
                 </div>
                 <div class="footer-section">
                     <h4>Navegação</h4>
                     <ul>
-                        <li><a href="ia-agricultora.html">A IA Agricultora</a></li>
+                        <li><a href="ia-agricultora.html">Conheça a IARA</a></li>
                         <li><a href="dispositivos-iot.html">Dispositivos IoT</a></li>
                         <li><a href="cases-sucesso.html">Cases de Sucesso</a></li>
                         <li><a href="planos.html">Planos</a></li>
-                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -722,21 +334,21 @@
                     <ul>
                         <li><a href="#">Central de Ajuda</a></li>
                         <li><a href="#">Documentação</a></li>
-                        <li><a href="#">Tutoriais</a></li>
+                        <li><a href="#">Tutoriais IARA</a></li>
                         <li><a href="#">Status do Sistema</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contato</h4>
                     <ul>
-                        <li>📧 contato@farmbot.com.br</li>
+                        <li>📧 iara@farmbot.com.br</li>
                         <li>📞 +55 11 9999-9999</li>
                         <li>📍 São Paulo, SP</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 FarmBot. Todos os direitos reservados.</p>
+                <p>&copy; 2025 IARA - Inteligência Artificial Agricultora. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
